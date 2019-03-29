@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Week3-#2</title>
+	<style type="text/css">
+		.text{
+			font-family: arial black;
+			font-size: 120px;
+		}
+		.inlineblock{
+			display: inline-block;
+		}
+		.block{
+			display: block;
+		}
+
+		.heart{
+			position:relative;
+			left:400px;
+			bottom:400px;
+
+		}
+		.box{
+			
+			background-color: deeppink;
+			width:20px;
+			height:20px;
+			margin:-1px;
+		}
+		.box:hover{
+			margin:5px;
+		}
+		.b{
+			background-color: white;
+			opacity: 0;
+		}
+
+
+		.heart2{
+			position:relative;
+			left:600px;
+			bottom:180px;
+		}
+		.box2{
+			
+			background-color: deeppink;
+			width:20px;
+			height:20px;
+			margin:-1px;
+			
+		}
+		.box2:hover{
+			margin:5px;
+			
+
+		}
+		.b2{
+			background-color: white;
+			opacity: 0;
+		}
+		.heart3{
+			position:relative;
+			left:-180px;
+			bottom:500px;
+
+			animation-name: date;
+			animation-duration: 8000ms;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: normal; 
+		}
+
+		@keyframes date{
+			from{
+				left:-180px;
+
+			}
+			to{
+				left:1400px;
+
+			}
+		} 
+
+		.date{
+			position:absolute;
+			font-family: arial;
+			font-size:25px;
+			text-align: center;
+			top:26px;
+			left:5px;
+			color: white;
+		}
+
+		.love{
+			bottom:200px;
+			left:400px;
+			width:20px;
+			height:20px;
+			background-color: deeppink;
+			position: fixed;
+
+			animation-name: love;
+			animation-duration: 600ms;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: normal; 
+		}
+		@keyframes love{
+			from{
+				width:30px;
+				height:30px;
+				background-color: deeppink;
+
+			}
+
+			to{
+				width:50px;
+				height:50px;
+				background-color: red;
+				
+
+			}
+		}
+		.love:hover{
+			margin:20px;
+		}
+		.l1{
+			bottom:400px;
+			left:700px;
+
+		}
+		.l2{
+			bottom:500px;
+			left:200px;
+
+		}
+
+		.l3{
+			bottom:300px;
+			left:100px;
+
+		}
+
+		.l4{
+			bottom:300px;
+			left:800px;
+
+		}
+
+		.l5{
+			bottom:600px;
+			left:900px;
+
+		}
+
+		.l6{
+			bottom:200px;
+			left:1100px;
+
+		}
+
+		.l7{
+			bottom:650px;
+			left:1100px;
+
+		}
+		
+		.l8{
+			bottom:600px;
+			left:100px;
+
+		}
+
+		.you{
+			font-family: arial black;
+			font-size: 120px;
+			position:absolute;
+			top:347px;
+		}
+		.you:hover{
+			margin-top: 70px;
+		}
+		
+	
+		
+		
+		
+
+	</style>
+
+</head>
+
+<body>
+	
+	<div class="hearts">
+		
+	</div>
+	<div class="you">
+		you.
+	</div>
+	
+	<div class="text">
+		Our love and prayers are with you.
+	</div>
+
+	<div class="heart">
+		<div class="box b inlineblock"></div>
+		<div class="box a inlineblock"></div>
+		<div class="box a inlineblock"></div>
+		<div class="box b inlineblock"></div>
+		<div class="box a inlineblock"></div>
+		<div class="box a inlineblock"></div>
+		<br>
+		<div class="box a inlineblock"></div>
+		<div class="box a inlineblock"></div>
+		<div class="box a inlineblock"></div>
+		<div class="box a inlineblock"></div>
+		<div class="box a inlineblock"></div>
+		<div class="box a inlineblock"></div>
+		<div class="box a inlineblock"></div>
+		<br>
+		<div class="box a inlineblock"></div>
+		<div class="box a inlineblock"></div>
+		<div class="box a inlineblock"></div>
+		<div class="box a inlineblock"></div>
+		<div class="box a inlineblock"></div>
+		<div class="box a inlineblock"></div>
+		<div class="box a inlineblock"></div>
+		<br>
+		<div class="box b inlineblock"></div>
+		<div class="box a inlineblock"></div>
+		<div class="box a inlineblock"></div>
+		<div class="box a inlineblock"></div>
+		<div class="box a inlineblock"></div>
+		<div class="box a inlineblock"></div>
+		<br>
+		<div class="box b inlineblock"></div>
+		<div class="box b inlineblock"></div>
+		<div class="box a inlineblock"></div>
+		<div class="box a inlineblock"></div>
+		<div class="box a inlineblock"></div>
+		<br>
+		<div class="box b inlineblock"></div>
+		<div class="box b inlineblock"></div>
+		<div class="box b inlineblock"></div>
+		<div class="box a inlineblock"></div>
+
+	</div>
+
+	<div class="love"></div>
+	<div class="love"></div>
+
+	<div class="love l1"></div>
+	<div class="love l1"></div>
+
+	<div class="love l2"></div>
+	<div class="love l2"></div>
+
+	<div class="love l3"></div>
+	<div class="love l3"></div>
+
+	<div class="love l4"></div>
+	<div class="love l4"></div>
+
+	<div class="love l5"></div>
+	<div class="love l5"></div>
+
+	<div class="love l6"></div>
+	<div class="love l6"></div>
+
+	<div class="love l7"></div>
+	<div class="love l7"></div>
+
+	<div class="love l8"></div>
+	<div class="love l8"></div>
+
+	<div class="heart2">
+		<div class="box2 b inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 b inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<br>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<br>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<br>
+		<div class="box2 b inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<br>
+		<div class="box2 b inlineblock"></div>
+		<div class="box2 b inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<br>
+		<div class="box2 b inlineblock"></div>
+		<div class="box2 b inlineblock"></div>
+		<div class="box2 b inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+
+	</div>
+
+	<div class="heart3">
+		<div class="date">
+			21 Mar 2019
+			<br>
+			5.32pM
+		</div>
+		<div class="box2 b inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 b inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<br>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<br>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<br>
+		<div class="box2 b inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<br>
+		<div class="box2 b inlineblock"></div>
+		<div class="box2 b inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+		<br>
+		<div class="box2 b inlineblock"></div>
+		<div class="box2 b inlineblock"></div>
+		<div class="box2 b inlineblock"></div>
+		<div class="box2 a inlineblock"></div>
+
+	</div>
+	
+
+
+</body>

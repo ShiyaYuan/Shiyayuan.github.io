@@ -1,9 +1,482 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>homepage</title>
+	<title>coco's homepage</title>
+	<style type="text/css">
+		.sans {
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 20px;
+			letter-spacing:-0.02em;
+		}
+		.sans-black {
+			font-family: arial black, arial;
+			font-size: 60px;
+		}
+		.sans-narrow {
+			font-family: arial narrow, arial;
+			font-size: 30px;
+		}
+
+		.big {
+			font-size:40vw;
+		}
+
+		.content{
+			margin-top:100px;
+		}
+
+
+		.coco{
+			position: relative;
+			left:10px;
+			bottom:920px;
+
+			animation-name: coco;
+			animation-duration: 3000ms;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: normal;
+		}
+
+		@keyframes coco{
+			from{
+				left:-50px;
+
+			}
+			to{
+				left:1200px;
+
+			}
+		}
+
+		.c1{
+			position: absolute;
+			width:150px;
+			height: 150px;
+			background-color: red;
+			
+		}
+		.c2{
+			position: absolute;
+			bottom:-2px;
+			width:150px;
+			height: 30px;
+			background-color: black;
+
+			animation-name: hair;
+			animation-duration: 600ms;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: normal;
+			
+
+		}
+		.c3{
+			position: absolute;
+			top:-28px;
+			left:-20px;
+			width:20px;
+			height: 170px;
+			background-color: black;
+
+			animation-name: hair;
+			animation-duration: 600ms;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: normal;
+			
+
+		}
+		.c4{
+			position: absolute;
+			top:72px;
+			left:-30px;
+			width:10px;
+			height: 70px;
+			background-color: black;
+
+			animation-name: hair;
+			animation-duration: 600ms;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: normal;
+			
+
+		}
+		.c5{
+			position: absolute;
+			top:112px;
+			left:-40px;
+			width:10px;
+			height: 30px;
+			background-color: black;
+
+			animation-name: hair;
+			animation-duration: 600ms;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: normal;
+			
+
+		}
+		.c6{
+			position: absolute;
+			top:-28px;
+			left:150px;
+			width:20px;
+			height: 170px;
+			background-color: black;
+
+			animation-name: hair;
+			animation-duration: 600ms;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: normal;
+			
+
+		}
+		.c7{
+			position: absolute;
+			top:72px;
+			left:170px;
+			width:10px;
+			height: 70px;
+			background-color: black;
+
+			animation-name: hair;
+			animation-duration: 600ms;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: normal;
+			
+
+		}
+		.c8{
+			position: absolute;
+			top:112px;
+			left:180px;
+			width:10px;
+			height: 30px;
+			background-color: black;
+
+			animation-name: hair;
+			animation-duration: 600ms;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: normal; 
+			
+
+		}
+		@keyframes hair{
+			0%{background-color: black;}
+			50%{background-color: yellow;}
+			100%{background-color: pink;}
+		}
+
+
+		.ceye1{
+			position: absolute;
+			top:55px;
+			left:32px;
+			width:20px;
+			height: 6px;
+			background-color: black;
+			border:.9px solid white;
+
+		}
+
+		.ceye2{
+			position: absolute;
+			top:55px;
+			left:95px;
+			width:20px;
+			height: 6px;
+			background-color: black;
+			border:0.9px solid white;
+
+		}
+		.cmouth{
+			position: absolute;
+			top:100px;
+			left:62px;
+			width:25px;
+			height: 9px;
+			background-color: black;
+			border:.9px solid white;
+
+		}
+		.box1{
+			position: absolute;
+			top:15px;
+			left:-70px;
+			width:30px;
+			height: 30px;
+			background-color: black;
+
+		}
+		.box2{
+			position: absolute;
+			top:-90px;
+			left:-300px;
+			width:170px;
+			height: 70px;
+			background-color: black;
+			color: white;
+			font-family:arial;
+			font-size:30px;
+			padding-top: 40px;
+			padding-left: 40px;
+
+		}
+
+		.coco2{
+			position: relative;
+			left:10px;
+			bottom:320px;
+
+			animation-name: coco;
+			animation-duration: 3000ms;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: reverse;
+		}
+
+		@keyframes coco{
+			from{
+				left:-50px;
+
+			}
+			to{
+				left:1500px;
+
+			}
+		}
+
+		.c1{
+			position: absolute;
+			width:150px;
+			height: 150px;
+			background-color: red;
+			
+		}
+		.c2{
+			position: absolute;
+			bottom:-2px;
+			width:150px;
+			height: 30px;
+			background-color: black;
+
+			animation-name: hair;
+			animation-duration: 600ms;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: normal;
+			
+
+		}
+		.c3{
+			position: absolute;
+			top:-28px;
+			left:-20px;
+			width:20px;
+			height: 170px;
+			background-color: black;
+
+			animation-name: hair;
+			animation-duration: 600ms;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: normal;
+			
+
+		}
+		.c4{
+			position: absolute;
+			top:72px;
+			left:-30px;
+			width:10px;
+			height: 70px;
+			background-color: black;
+
+			animation-name: hair;
+			animation-duration: 600ms;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: normal;
+			
+
+		}
+		.c5{
+			position: absolute;
+			top:112px;
+			left:-40px;
+			width:10px;
+			height: 30px;
+			background-color: black;
+
+			animation-name: hair;
+			animation-duration: 600ms;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: normal;
+			
+
+		}
+		.c6{
+			position: absolute;
+			top:-28px;
+			left:150px;
+			width:20px;
+			height: 170px;
+			background-color: black;
+
+			animation-name: hair;
+			animation-duration: 600ms;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: normal;
+			
+
+		}
+		.c7{
+			position: absolute;
+			top:72px;
+			left:170px;
+			width:10px;
+			height: 70px;
+			background-color: black;
+
+			animation-name: hair;
+			animation-duration: 600ms;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: normal;
+			
+
+		}
+		.c8{
+			position: absolute;
+			top:112px;
+			left:180px;
+			width:10px;
+			height: 30px;
+			background-color: black;
+
+			animation-name: hair;
+			animation-duration: 600ms;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: normal; 
+			
+
+		}
+		@keyframes hair{
+			0%{background-color: black;}
+			50%{background-color: yellow;}
+			100%{background-color: pink;}
+		}
+
+		.links{
+			font-family: arial black, arial;
+			font-size: 60px;
+			color: black;
+		}
+
+		a{
+			color: black;
+		}
+		
+		
+
+
+
+	</style>
 </head>
 <body>
-Coco's Homepage 
+	
+	<div class="sans-narrow big">COCO</div>
+	<div class="content sans-black">
+		WEEK ONE
+	</div>
+	<div class="links">
+			<a href="twitter/week1/wk1-1.html">ONE</a>
+			<a href="twitter/week1/wk1-2.html">TWO</a>
+			<a href="twitter/week1/wk1-3.html">THREE</a>
+			<a href="twitter/week1/wk1-4.html">FOUR</a>
+			<a href="twitter/week1/wk1-5.html">FIVE</a>
+	</div>
+
+	<div class="sans-black">
+		WEEK TWO
+	</div>
+	<div class="links">
+			<a href="twitter/week2/wk2-1.html">ONE</a>
+			<a href="twitter/week2/wk2-2.html">TWO</a>
+			<a href="twitter/week2/wk2-3.html">THREE</a>
+			<a href="twitter/week2/wk2-4.html">FOUR</a>
+			<a href="twitter/week2/wk2-5.html">FIVE</a>
+	</div>
+
+	<div class="sans-black">
+		WEEK THREE
+	</div>
+	<div class="links">
+			<a href="twitter/week3/wk3-1.html">ONE</a>
+			<a href="twitter/week3/wk3-2.html">TWO</a>
+			<a href="twitter/week3/wk3-3.html">THREE</a>
+			<a href="twitter/week3/wk3-4.html">FOUR</a>
+			<a href="twitter/week3/wk3-5.html">FIVE</a>
+	</div>
+
+	<div class="sans-black">
+		WEEK FOUR
+	</div>
+	<div class="links">
+			<a href="twitter/week4/wk4-1.html">ONE</a>
+			<a href="twitter/week4/wk4-2.html">TWO</a>
+			<a href="twitter/week4/wk4-3.html">THREE</a>
+			<a href="twitter/week4/wk4-4.html">FOUR</a>
+			<a href="twitter/week4/wk4-5.html">FIVE</a>
+	</div>
+		
+		<div class="coco">
+			<div class="c1"></div>
+			<div class="c2"></div>
+			<div class="c2"></div>
+			<div class="c3"></div>
+			<div class="c4"></div>
+			<div class="c5"></div>
+			<div class="c6"></div>
+			<div class="c7"></div>
+			<div class="c8"></div>
+			<div class="ceye1"></div>
+			<div class="ceye2"></div>
+			<div class="cmouth"></div>
+			<div class="box1"></div>
+			<div class="box2">hi</div>
+		</div>
+
+		<div class="coco2">
+			<div class="c1"></div>
+			<div class="c2"></div>
+			<div class="c2"></div>
+			<div class="c3"></div>
+			<div class="c4"></div>
+			<div class="c5"></div>
+			<div class="c6"></div>
+			<div class="c7"></div>
+			<div class="c8"></div>
+			<div class="ceye1"></div>
+			<div class="ceye2"></div>
+			<div class="cmouth"></div>
+		</div>
+
+
+
+		
+
+
+
+
 </body>
 </html>
