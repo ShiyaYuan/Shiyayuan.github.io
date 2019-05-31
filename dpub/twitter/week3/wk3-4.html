@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Week3-4</title>
+	<style type="text/css">
+		body{
+			background-color: black;
+
+		}
+		.invisible{
+			width: 800px;
+  			height:200px;
+  			opacity: 0;
+
+		}
+		.text{
+			font-family: Courier, monospace;
+			font-size: 50px;
+			color: black;
+
+			text-align: center;
+			display:block;
+			margin:auto;
+
+			animation-name: twitt;
+			animation-duration: 1600ms;
+			animation-timing-function: ease-in-out;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+		}
+		@keyframes twitt{
+			0%{opacity: 0;}
+			30%{opacity:0;}
+			100%{opacity: 1;}
+
+		}
+
+
+		.date{
+			font-family: Courier, monospace;
+			font-size: 20px;
+			color: black;
+
+			text-align: center;
+			display:block;
+			margin:auto;
+
+			animation-name: date;
+			animation-duration: 1600ms;
+			animation-timing-function: ease-in-out;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+
+		}
+
+		@keyframes date{
+			0%{opacity: 0;}
+			30%{opacity:0;}
+			100%{opacity: 1;}
+		}
+
+		.box{
+			background-color: black;
+			width: 800px;
+  			height:300px;
+  			box-shadow:0px 0px 90px 30px white;
+  			display: block;
+			margin: auto;
+
+			animation-name: grow;
+			animation-duration: 1600ms;
+			animation-timing-function: ease-in-out;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+		}
+
+		@keyframes grow{
+			from{
+				width: 50px;
+  				height:50px;
+
+			}
+			to{
+				width: 800px;
+  				height:300px;
+
+			}
+
+
+		}
+		
+
+	</style>
+
+</head>
+
+<body>
+	May he rest in peace. 25 Mar 2019 3:33PM
+	<div class="invisible"></div>
+
+	<div class="text">
+		May he rest in peace
+	</div>
+	<div class="box"></div>
+	<div class="date">
+		25 Mar 2019
+		<br>
+		2:21AM
+	</div>
+
+</body>
+</html>

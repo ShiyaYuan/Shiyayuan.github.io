@@ -1,0 +1,58 @@
+$( document ).ready(function() {
+// start here  
+
+$('.nav-close').click(function() {
+  $('.nav-popup').toggleClass('hide');
+});
+
+// $('.trigger').click(function() {
+//   $('.response').removeClass('hide');
+// });
+
+// $('.page1').click(function() {
+//   $('.content1').addClass('show');
+// });
+
+// $('.page2').click(function() {
+//   $('.content2').addClass('show');
+// });
+
+// $('.page-close').click(function() {
+//   $('.content').addClass('hide');
+// });
+
+$('.colophon-link').click(function() {
+  $('.colophon-popup').toggleClass('show');
+});
+
+// $('.page-close').click(function() {
+//   $('.page').addClass('hide');
+// });
+
+$('.video-close').click(function() {
+  $('.video').addClass('hide');
+});
+
+ $('.title').mouseenter(function() {
+    $('.title-hover').addClass('t-show');
+  });
+
+$('.title').mouseleave(function() {
+    $('.title-hover').removeClass('t-show');
+  });
+
+
+// start sq-hovers
+ $('.sq1').mouseenter(function() {
+    $('.sq1-hover').addClass('t-show');
+  });
+
+$('.sq1').mouseleave(function() {
+    $('.sq1-hover').removeClass('t-show');
+  });
+
+
+
+
+// end here
+});

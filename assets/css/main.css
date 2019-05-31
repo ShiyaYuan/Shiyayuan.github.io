@@ -1,0 +1,245 @@
+/*body {
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 32px;
+}
+
+a {
+	color:red;
+}
+
+.background-peach {
+	background-color: peachpuff;
+}
+
+.background-lightgreen {
+	background-color: lightgreen;
+}
+
+.main {
+	padding: 10px;
+}
+
+.title {
+	font-size: 64px;
+}
+
+.width-50 {
+	width:50%;
+}
+
+img {
+	width: 100%;
+}*/
+
+.title{
+	font-family: arial;
+	font-size:60px;
+	position: fixed;
+	z-index: 4;
+	padding:20px;
+	width:100%;
+	cursor: pointer;
+
+}
+
+.yellow{
+	position: absolute;
+	right:0px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+
+.journal{
+
+}
+
+
+
+a{
+	color: black;
+}
+
+.title-hover{
+	position: fixed;
+	z-index: 4;
+	width: 25%;
+	margin-left: 170px;
+	margin-top: 105px;
+	visibility: hidden;
+}
+
+.t-show {
+  visibility: visible;
+}
+
+img{
+	width:100%;
+}
+
+
+.book-info{
+	font-family: arial;
+	font-size:60px;
+	position:relative;
+	padding: 20px;
+	top:220px;
+
+}
+
+.inline{
+	display:inline;
+	
+}
+
+.nav-link{
+	font-family: arial;
+	font-size:60px;
+	position: fixed;
+	z-index: 4;
+	padding:20px;
+	width:100%;
+	bottom:0px;
+	display:inline-block;
+	text-align: center;
+	cursor:pointer;
+
+}
+
+
+.nav-popup{
+	align-items:center;
+	justify-content:center;
+	position: fixed;
+	z-index: 2;
+	height:100vh;
+	width:100vw;
+	position:fixed;
+	top:0px;
+	left:0px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+
+.nav-popup.hide{
+	display:none;
+}
+
+.nav-item{
+	width:50%;
+}
+
+.video-bg{
+	position:fixed;
+	width:100%;
+	height:100vh;
+	display:flex;
+	align-items: center;
+}
+
+video{
+	width:100%;
+}
+
+.yellow-bg{
+	position: absolute;
+	background-color: yellow;
+	width:100vw;
+	height:110vh;
+	margin-top: 100vh;
+}
+
+.colophon-link{
+
+}
+
+.colophon-popup{
+	font-size: 40px;
+	font-family: arial;
+	width:50vw;
+	position: fixed;
+	z-index: 1;
+	top:150px;
+	padding:20px;
+	line-height: 44px;
+	display:none;
+
+}
+
+.colophon-popup.show{
+	display:flex;
+}
+
+.hover-colophon{
+
+}
+
+
+.buy-link{
+	position: fixed;
+	margin-top: 420px;
+}
+
+.sq{
+	cursor: pointer;
+}
+
+.sq1-hover{
+	position: absolute;
+	width:10%;
+	left:300px;
+	top:230px;
+	visibility: hidden;
+
+}
+
+.sq2-hover{
+	position: absolute;
+	width:10%;
+	left:500px;
+	top:230px;
+
+}
+
+.sq3-hover{
+	position: absolute;
+	width:10%;
+	left:700px;
+	top:230px;
+
+}
+
+.sq4-hover{
+	position: absolute;
+	width:10%;
+	left:850px;
+	top:230px;
+
+}
+
+.sq5-hover{
+	position: absolute;
+	width:10%;
+	left:300px;
+	top:400px;
+
+}
+
+.sq6-hover{
+	position: absolute;
+	width:10%;
+	left:450px;
+	top:400px;
+
+}
+
+.sq7-hover{
+	position: absolute;
+	width:10%;
+	left:620px;
+	top:400px;
+
+}
+
+
