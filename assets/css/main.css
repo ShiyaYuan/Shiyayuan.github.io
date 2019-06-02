@@ -109,7 +109,7 @@ img{
 .nav-popup{
 	align-items:center;
 	justify-content:center;
-	position: fixed;
+	position: relative;
 	z-index: 2;
 	height:100vh;
 	width:100vw;
@@ -183,6 +183,12 @@ video{
 
 .sq{
 	cursor: pointer;
+}
+
+
+
+.sq-show{
+	visibility: visible;
 }
 
 .sq1-hover{
