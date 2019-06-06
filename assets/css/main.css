@@ -54,7 +54,6 @@ img {
 }
 
 
-
 a{
 	color: black;
 }
@@ -82,7 +81,7 @@ img{
 	font-size:60px;
 	position:relative;
 	padding: 20px;
-	top:220px;
+	top:280px;
 
 }
 
@@ -132,10 +131,8 @@ img{
 
 .video-bg{
 	position:fixed;
-	width:100%;
 	height:100vh;
-	display:flex;
-	align-items: center;
+	width: 108vw;
 }
 
 video{
@@ -185,6 +182,9 @@ video{
 	cursor: pointer;
 }
 
+.sq1{
+}
+
 
 
 .sq-show{
@@ -196,9 +196,10 @@ video{
 	width:10%;
 	left:300px;
 	top:230px;
-	visibility: hidden;
+	visibility: show;
 
 }
+
 
 .sq2-hover{
 	position: absolute;

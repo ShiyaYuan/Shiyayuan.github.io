@@ -5,6 +5,10 @@ $('.nav-close').click(function() {
   $('.nav-popup').toggleClass('hide');
 });
 
+$('.pnav-link').click(function() {
+  $('.pnav-popup').toggleClass('show');
+});
+
 // $('.trigger').click(function() {
 //   $('.response').removeClass('hide');
 // });
@@ -24,10 +28,6 @@ $('.nav-close').click(function() {
 $('.colophon-link').click(function() {
   $('.colophon-popup').toggleClass('show');
 });
-
-// $('.page-close').click(function() {
-//   $('.page').addClass('hide');
-// });
 
 $('.video-close').click(function() {
   $('.video').addClass('hide');
@@ -59,6 +59,8 @@ $('.hover-1').mouseenter(function() {
 $('.hover-1').mouseleave(function() {
     $('.pop-1').removeClass('p-show');
   });
+
+// 2-pop up
 
 
 
