@@ -41,6 +41,9 @@ img {
 	cursor: pointer;
 
 }
+.a{
+
+}
 
 .yellow{
 	position: absolute;
@@ -50,7 +53,7 @@ img {
 }
 
 .journal{
-
+	width:300px;
 }
 
 
@@ -65,6 +68,7 @@ a{
 	margin-left: 170px;
 	margin-top: 105px;
 	visibility: hidden;
+	pointer-events: none;
 }
 
 .t-show {
@@ -139,6 +143,7 @@ video{
 	width:100%;
 }
 
+
 .yellow-bg{
 	position: absolute;
 	background-color: yellow;
@@ -182,13 +187,18 @@ video{
 	cursor: pointer;
 }
 
-.sq1{
-}
+.sq6{
+	
 
+}
 
 
 .sq-show{
 	visibility: visible;
+}
+
+.sq1-hover.active {
+	visibility: visible !important;
 }
 
 .sq1-hover{
@@ -196,17 +206,27 @@ video{
 	width:10%;
 	left:300px;
 	top:230px;
-	visibility: show;
+	visibility: hidden !important;
+	pointer-events: none;
 
 }
 
+.sq2-hover.active {
+	visibility: visible !important;
+}
 
 .sq2-hover{
 	position: absolute;
 	width:10%;
 	left:500px;
 	top:230px;
+	visibility: hidden !important;
+	pointer-events: none;
 
+}
+
+.sq3-hover.active {
+	visibility: visible !important;
 }
 
 .sq3-hover{
@@ -214,7 +234,13 @@ video{
 	width:10%;
 	left:700px;
 	top:230px;
+	visibility: hidden !important;
+	pointer-events: none;
 
+}
+
+.sq4-hover.active {
+	visibility: visible !important;
 }
 
 .sq4-hover{
@@ -222,7 +248,13 @@ video{
 	width:10%;
 	left:850px;
 	top:230px;
+	visibility: hidden !important;
+	pointer-events: none;
 
+}
+
+.sq5-hover.active {
+	visibility: visible !important;
 }
 
 .sq5-hover{
@@ -230,22 +262,34 @@ video{
 	width:10%;
 	left:300px;
 	top:400px;
+	visibility: hidden !important;
+	pointer-events: none;
 
 }
 
+.sq6-hover.active {
+	visibility: visible !important;
+}
 .sq6-hover{
 	position: absolute;
 	width:10%;
 	left:450px;
 	top:400px;
+	visibility: hidden !important;
+	pointer-events: none;
 
 }
 
+.sq7-hover.active {
+	visibility: visible !important;
+}
 .sq7-hover{
 	position: absolute;
 	width:10%;
 	left:620px;
 	top:400px;
+	visibility: hidden !important;
+	pointer-events: none;
 
 }
 
