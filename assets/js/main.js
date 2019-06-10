@@ -13,10 +13,6 @@ $('.a').click(function() {
   $('.colophon-popup').toggleClass('show');
 });
 
-$('.yellow').click(function() {
-  $('.colophon-popup').toggleClass('show');
-});
-
 $('.journal').click(function() {
   $('.colophon-popup').toggleClass('show');
 });
@@ -117,6 +113,50 @@ $('.hover-1').mouseleave(function() {
   });
 
 // 2-pop up
+$('.hover-21').mouseenter(function() {
+    $('.pop-21').addClass('p-show');
+  });
+
+$('.hover-22').mouseenter(function() {
+    $('.pop-22').addClass('p-show');
+  });
+
+$('.hover-23').mouseenter(function() {
+    $('.pop-23').addClass('p-show');
+  });
+
+$('.hover-24').mouseenter(function() {
+    $('.pop-24').addClass('p-show');
+  });
+
+$('.hover-25').mouseenter(function() {
+    $('.pop-25').addClass('p-show');
+  });
+
+$('.hover-26').mouseenter(function() {
+    $('.pop-26').addClass('p-show');
+  });
+
+$('.hover-27').mouseenter(function() {
+    $('.pop-27').addClass('p-show');
+  });
+
+$('.hover-28').mouseenter(function() {
+    $('.pop-28').addClass('p-show');
+  });
+
+$('.hover-29').mouseenter(function() {
+    $('.pop-29').addClass('p-show');
+  });
+
+$('.hover-210').mouseenter(function() {
+    $('.pop-210').addClass('p-show');
+  });
+
+$('.hover-211').mouseenter(function() {
+    $('.pop-211').addClass('p-show');
+  });
+
 
 // 3-pop up
 $('.hover-3').mouseenter(function() {
