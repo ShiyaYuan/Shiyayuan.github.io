@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Week3-#3</title>
+	<style type="text/css">
+		.box{
+			position:absolute;
+			background-color: black;
+
+			
+		}
+
+		.one{
+			top:350px;
+			left:150px;
+			width:700px;
+			height:180px;
+
+		}
+
+		.two{
+			top:400px;
+			left:100px;
+			width:200px;
+			height:500px;
+
+		}
+
+		.three{
+			top:320px;
+			left:200px;
+			width:200px;
+			height:40px;
+
+		}
+		.four{
+			top:335px;
+			left:810px;
+			width:55px;
+			height:85px;
+
+		}
+		.five{
+			top:510px;
+			left:240px;
+			width:500px;
+			height:40px;
+
+		}
+		.six{
+			top:640px;
+			left:250px;
+			width:300px;
+			height:20px;
+
+		}
+		.seven{
+			top:550px;
+			left:530px;
+			width:20px;
+			height:90px;
+
+		}
+		.eight{
+			top:550px;
+			left:280px;
+			width:100px;
+			height:90px;
+
+		}
+		.trigger{
+			position: relative;
+			background-color: red;
+			top:70px;
+			left:420px;
+			width:32px;
+			height:90px;
+			animation-name: trigger;
+			animation-duration: 400ms;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: normal;
+
+		}
+
+		@keyframes trigger{
+			from{
+				background-color: red;
+
+			}
+
+			to{
+				background-color: white;
+
+			}
+
+		}
+		.text{
+			font-family: arial;
+			font-size:180px;
+		}
+		.text2{
+			padding-top: 360px;
+			font-family: arial;
+			font-size:150px;
+		}
+		.guntext{
+			bottom:50px;
+			width:500px;
+			left:430px;
+			position:absolute;
+			z-index: 1;
+			font-family: arial;
+			font-size:40px;
+			color: red;
+
+
+		}
+		.trigger:hover{
+			letter-spacing: 10px;
+			color: red;
+		}
+		.bullet{
+			position: absolute;
+			z-index: 1;
+			width:40px;
+			height:20px;
+			background-color:red;
+			top:425px;
+			left:800px;
+
+			animation-name: bullet;
+			animation-duration: 400ms;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: normal; 
+		}
+
+		@keyframes bullet{
+			from{
+				left:800px;
+
+
+			}
+			to{
+				left:1400px;
+
+
+			}
+		}
+		.date{
+			font-family: arial;
+			font-size:20px;
+			color:white;
+			position: absolute;
+			top:846px;
+			left:110px;
+
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="bullet"></div>
+	<div class="text">
+		AUSTRALIA'S GUN LAWS
+		
+	</div>
+
+	
+
+	<div class="box one"></div>
+	<div class="box two"></div>
+	<div class="box three"></div>
+	<div class="box four"></div>
+	<div class="box five"></div>
+	<div class="box six"></div>
+	<div class="box seven"></div>
+	<div class="box eight"></div>
+	<div class="box trigger">
+		<div class="guntext">
+		are the best thanks to John Howard
+		
+
+	</div>
+		
+
+	</div>
+	<div class="text2">
+		WE WILL NOT BE CHANGING THEM
+		
+	</div>
+	<div class="date">
+		25.03.2019
+		<br>
+		3:33PM
+	</div>
+
+</body>
+</html>

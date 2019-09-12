@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Week3-#1</title>
+	<style type="text/css">
+		body{
+			background-color: red;
+
+		}
+		.text{
+			
+			font-size:30px;
+			font-family:arial;
+		}
+
+		.cap{	
+
+			font-size:80px;
+			font-family:arial;
+			
+		}
+
+		.cap:hover{
+			position: relative;
+			right:140px;
+			bottom:10px;
+			letter-spacing:10px;
+			font-style:bold;
+		}
+		
+		.numbers{
+			font-size:80px;
+			font-family:arial black;
+			margin:-7px;
+			color:white;
+
+
+
+
+		}
+
+		.numbers:hover{
+			color:red;
+			
+			
+		}
+		.and{
+			position:;
+			animation-name: flashand;
+			animation-duration: 100ms;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: normal;
+
+		}
+		@keyframes flashand{
+			from{color:black;}
+			to{color:white;}
+		}
+		.n{
+			font-size:180px;
+			position:absolute;
+			right:300px;
+			top:40px;
+			animation-name: flashn;
+			animation-duration: 200ms;
+
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: normal;
+			
+
+		}
+		@keyframes flashn{
+			from{color:black;}
+			to{color:white;}
+		}
+		.spread{
+			animation-name: spreadd;
+			animation-duration: 300ms;
+
+			animation-timing-function: ease-in-out;
+			animation-iteration-count: infinite;
+			animation-direction: normal;
+			width:500px;
+  			height:250px;
+  			background: linear-gradient(to right,white,yellow,aqua,lime,magenta,red,blue);
+		}
+
+		@keyframes spreadd{
+			from{
+				letter-spacing: default;
+				
+			}
+			to{
+				letter-spacing: 200px;
+				
+			}
+		}
+		.evenly{
+			font-size:50px;
+
+		}
+		.evenly:hover{
+			position:absolute;
+			
+			bottom:400px;
+			font-size:300px;
+			letter-spacing: 100px;
+			transition:1000ms;
+
+		}
+		.date{
+			font-family:arial;
+			font-size:15px;
+			text-align: left;
+			position:absolute;
+			left:500px;
+			top:171px;
+			animation-name: datee;
+			animation-duration: 200ms;
+
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: normal;
+			
+		}
+		@keyframes datee{
+			from{color:black;}
+			to{color:white;}
+		}
+		.date:hover{
+			transform: rotate(180deg);
+		}
+
+		
+
+		
+
+	</style>
+
+</head>
+
+
+<body>
+	
+	<div class="text">
+		We're reducing the migration
+		<span class="cap">cap</span>
+		to 
+		<span class="numbers">1</span>
+		<span class="numbers">6</span>
+		<span class="numbers">0</span>
+		<span class="numbers">,</span>
+		<span class="numbers">0</span>
+		<span class="numbers">0</span>
+		<span class="numbers">0</span>
+		<span class="text and">and<span class="n">&</span></span> 
+		ensuring we 
+		<br>
+		<span class="spread">spread</span>
+		<br>
+		population growth more
+		<span class="evenly">evenly</span>.
+		
+	</div>
+	<div class="date">
+		
+		19.03.2019
+		<br>
+		11:10PM
+		
+	</div>
+	
+
+
+
+</body>
+</html>
