@@ -909,6 +909,7 @@ a {
 .water-page {
 	width:100vw;
 	height:100vh;
+	background-image: linear-gradient( white, lightskyblue);
 }
 
 .water-graphic {
@@ -924,24 +925,25 @@ a {
 
 .water-drop {
 	z-index: 9;
-	background-image: linear-gradient( blue, white);
+	background-image: linear-gradient( lightskyblue, white);
 	width:100px;
 	height:100px;
 	border-radius: 50%;
 	animation-name: waterdrop;
-	animation-duration: 0.8s;
+	animation-duration: 0.9s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
+	margin-top: -300px;
 
 }
 
 @keyframes waterdrop {
 	from {
-		margin:0px;
+		margin-top: -300px;
 	}
 
 	to {
-		margin-bottom: 30px;
+		margin-top: -180px;
 	}
 }
 
@@ -949,9 +951,9 @@ a {
 	position: absolute;
 	width: 30vw;
 	height:10vh;
-	box-shadow: 0px 0px 50px 10px blue;
+	box-shadow: 0px 0px 50px 10px lightskyblue;
 	border-radius: 50%;
-	border:4px solid blue;
+	border:4px solid lightskyblue;
 
 }
 
@@ -959,19 +961,44 @@ a {
 	position: absolute;
 	width: 50vw;
 	height:20vh;
-	box-shadow: 0px 0px 50px 10px blue;
+	box-shadow: 0px 0px 50px 10px lightskyblue;
 	border-radius: 50%;
-	border:4px solid blue;
+	border:4px solid lightskyblue;
 }
 
 .water-ripple3 {
 	position: absolute;
 	width: 70vw;
 	height:30vh;
-	box-shadow: 0px 0px 50px 10px blue;
+	box-shadow: 0px 0px 50px 10px lightskyblue;
 	border-radius: 50%;
-	border:4px solid blue;
+	border:4px solid lightskyblue;
 }
+
+
+/* Water2 */
+
+.water2-page {
+ 	background-color: white;
+ 	width: 100vw;
+ 	height:100vw;
+}
+
+.water2-graphic {
+
+}
+
+.water2-vertical {
+
+}
+
+.water2-horizontal {
+
+}
+
+
+
+
 
 
 
@@ -979,9 +1006,13 @@ a {
 /* CLoud */
 
 .cloud-page {
-	background-color: white;
+	background-color: aqua;
 	width:100vw;
 	height:100vh;
+}
+
+.cloud-color {
+	background-image: linear-gradient( aqua, white);
 }
 
 .cloud-graphic {
@@ -989,12 +1020,228 @@ a {
 	height:100vh;
 }
 
-.cloud-circle1 {
-	background-image: linear-gradient( blue, white);
-	width:100px;
-	height:100px;
-	border-radius: 50%;
+.cloud1 {
+	margin-left: 0px;
 }
+
+.cloud2 {
+	margin-left: 42vw;
+}
+
+.cloud3 {
+	margin-left: -100px;
+}
+
+.cloud4 {
+	margin-left: 42vw;
+}
+
+.cloud-circle1 {
+	position: absolute;
+	width:8vw;
+	height:15vh;
+	border-radius: 50%;
+	margin-left:350px;
+}
+
+.cloud-circle2 {
+	position: absolute;
+	width:8vw;
+	height:15vh;
+	border-radius: 50%;
+	margin-left:280px;
+	margin-top: 20px;
+}
+
+.cloud-circle3 {
+	position: absolute;
+	width:8vw;
+	height:15vh;
+	border-radius: 50%;
+	margin-left:220px;
+	margin-top: 60px;
+}
+
+.cloud-circle4 {
+	position: absolute;
+	width:8vw;
+	height:15vh;
+	border-radius: 50%;
+	margin-left:150px;
+	margin-top: 40px;
+}
+
+.cloud-circle5 {
+	position: absolute;
+	width:8vw;
+	height:15vh;
+	border-radius: 50%;
+	margin-left:70px;
+	margin-top: 90px;
+}
+
+.cloud-circle6 {
+	position: absolute;
+	width:8vw;
+	height:15vh;
+	border-radius: 50%;
+	margin-left:120px;
+	margin-top: 140px;
+}
+
+.cloud-circle7 {
+	position: absolute;
+	width:8vw;
+	height:15vh;
+	border-radius: 50%;
+	margin-left:190px;
+	margin-top: 200px;
+}
+
+.cloud-circle8 {
+	position: absolute;
+	width:8vw;
+	height:15vh;
+	border-radius: 50%;
+	margin-left:260px;
+	margin-top: 190px;
+}
+
+.cloud-circle9 {
+	position: absolute;
+	width:8vw;
+	height:15vh;
+	border-radius: 50%;
+	margin-left:340px;
+	margin-top: 170px;
+}
+
+.cloud-circle10 {
+	position: absolute;
+	width:8vw;
+	height:15vh;
+	border-radius: 50%;
+	margin-left:390px;
+	margin-top: 220px;
+}
+
+.cloud-circle11 {
+	position: absolute;
+	width:8vw;
+	height:15vh;
+	border-radius: 50%;
+	margin-left:430px;
+	margin-top: 180px;
+}
+
+.cloud-circle12 {
+	position: absolute;
+	width:8vw;
+	height:15vh;
+	border-radius: 50%;
+	margin-left:490px;
+	margin-top: 190px;
+}
+
+.cloud-circle13 {
+	position: absolute;
+	width:14vw;
+	height:14vh;
+	border-radius: 50%;
+	margin-left:530px;
+	margin-top: 140px;
+}
+
+.cloud-circle14 {
+	position: absolute;
+	width:8vw;
+	height:15vh;
+	border-radius: 50%;
+	margin-left:510px;
+	margin-top: 100px;
+}
+
+.cloud-circle15 {
+	position: absolute;
+	width:8vw;
+	height:15vh;
+	border-radius: 50%;
+	margin-left:470px;
+	margin-top: 50px;
+}
+
+.cloud-circle16 {
+	position: absolute;
+	width:8vw;
+	height:15vh;
+	border-radius: 50%;
+	margin-left:420px;
+	margin-top: 20px;
+}
+
+.cloud-circle17 {
+	position: absolute;
+	width:8vw;
+	height:15vh;
+	border-radius: 50%;
+	margin-left:160px;
+	margin-top: 110px;
+}
+
+.cloud-circle18 {
+	position: absolute;
+	width:8vw;
+	height:15vh;
+	border-radius: 50%;
+	margin-left:220px;
+	margin-top: 130px;
+}
+
+.cloud-circle19 {
+	position: absolute;
+	width:8vw;
+	height:15vh;
+	border-radius: 50%;
+	margin-left:270px;
+	margin-top: 110px;
+}
+
+.cloud-circle20 {
+	position: absolute;
+	width:8vw;
+	height:15vh;
+	border-radius: 50%;
+	margin-left:350px;
+	margin-top: 140px;
+}
+
+.cloud-circle21 {
+	position: absolute;
+	width:8vw;
+	height:15vh;
+	border-radius: 50%;
+	margin-left:350px;
+	margin-top: 70px;
+}
+
+.cloud-circle22 {
+	position: absolute;
+	width:8vw;
+	height:15vh;
+	border-radius: 50%;
+	margin-left:410px;
+	margin-top: 100px;
+}
+
+.cloud-circle23 {
+	position: absolute;
+	width:8vw;
+	height:15vh;
+	border-radius: 50%;
+	margin-left:450px;
+	margin-top: 140px;
+}
+
 
 
 
