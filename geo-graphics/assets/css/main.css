@@ -1829,25 +1829,6 @@ a {
 
 
 
-/* battery page*/
-
-.battery-page {
-	width:100vw;
-	height:100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: red;
-}
-
-.battery-text {
-	font-family: arial;
-	font-size: 40vw;
-	text-align: center;
-	-webkit-text-stroke: 4px black;
-
-}
-
 
 
 
