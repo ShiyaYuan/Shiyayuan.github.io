@@ -319,6 +319,7 @@ li {
 	left:0vw;
 	top: 10vh;
 	margin:20px;
+	font-size: 3vw;
 }
 
 .bg-nav-item {
@@ -349,6 +350,7 @@ li {
 	right:0vw;
 	top: 0vh;
 	margin:20px;
+	font-size: 3vw;
 }
 
 .nav-item {
@@ -383,14 +385,12 @@ li {
 	padding: 20px;
 	font-size: 1.5vw;
 	flex:0 0 40%;
-	line-height: 23px;
 
 }
 
 .about-context {
 	padding: 20px;
 	flex:0 0 60%;
-	line-height: 28px;
 }
 
 
