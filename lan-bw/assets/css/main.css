@@ -3,12 +3,12 @@ body {
 	font-size: 3vw;
 	background-color: green;
 
-	cursor:url('file:///Users/CocoYuan/Desktop/dpub-2/sublime/lan-bw/assets/images/butterfly2.png'), pointer;
+	cursor:url('https://shiyayuan.github.io/lan-bw/assets/images/butterfly2.png'), pointer;
 }
 
 
 .cursor {
-	cursor:url('file:///Users/CocoYuan/Desktop/dpub-2/sublime/lan-bw/assets/images/butterfly2.png'), auto;
+	cursor:url('https://shiyayuan.github.io/lan-bw/assets/images/butterfly2.png'), auto;
 }
 
 a {
@@ -18,7 +18,7 @@ a {
 }
 
 a:hover {
-	cursor:url('file:///Users/CocoYuan/Desktop/dpub-2/sublime/lan-bw/assets/images/butterfly2.png'), pointer;
+	cursor:url('https://shiyayuan.github.io/lan-bw/assets/images/butterfly2.png'), pointer;
 }
 
 .grid a:hover {
