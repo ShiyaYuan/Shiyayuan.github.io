@@ -52,6 +52,7 @@ a {
 
 
 .iframe-container {
+	z-index: 3;
 	width:50vw;
 	height:60vh;
 	border-radius: 50%;
@@ -72,12 +73,14 @@ a {
 	/*border:2px solid red;*/
 }
 
+
 .iframe-container:hover {
 	transform: scaleX(-1);
 }
 
 iframe {
-
+	padding-top: 0.5vh;
+	box-shadow: inset 10px 17px 40px white;
 	width:100vw;
 	height:100vh;
 
@@ -88,10 +91,11 @@ iframe {
 	position: fixed;
 	font-size: 8vw;
 	text-align: center;
-	padding-top: 2vw;
 }
 
 .grid {
+	width: 100vw;
+	height:100vh;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -106,8 +110,9 @@ iframe {
 	flex:0 0 40%;
 	height: 90vh;
 	overflow: scroll;
-	overflow: hidden;
-	/*transform: rotateY(20deg);*/
+	background-color: lime;
+	box-shadow: 0px 0px 30px lime;
+	transform: rotateY(20deg);
 }
 
 .left-content {
@@ -118,12 +123,15 @@ iframe {
 
 .right {
 	/*border:2px solid red;*/
+
 	margin:2vw;
 	color: white;
 	flex:0 0 40%;
 	height: 90vh;
 	overflow: scroll;
-	/*transform: rotateY(-20deg);*/
+	background-color: blueviolet;
+	box-shadow: 0px 0px 30px blueviolet;
+	transform: rotateY(-20deg);
 
 }
 
@@ -135,7 +143,8 @@ iframe {
 
 /* about */
 .about-icon {
-	z-index: 4;
+
+	z-index: 8;
 	font-size:8vw;
 	color: white;
 	font-family: arial narrow;
@@ -143,10 +152,12 @@ iframe {
 	right:0px;
 	bottom:0px;
 	padding: 2vw;
+	cursor:pointer;
 
 }
 
 .about-icon:hover {
+	
 	font-style: italic;
 	text-shadow: 0px 0px 10px white;
 	font-family: times;
@@ -154,29 +165,52 @@ iframe {
 }
 
 .about {
-	visibility: show;
+	/*visibility: hidden;*/
 	z-index: 3;
 	width:100vw;
 	height:100vh;
-	color: black;
+	
 	position: absolute;
-	font-size: 2vw;
-	letter-spacing: -0.02em;
+
 	
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 }
 
 .about-text {
+
+
+	font-size: 3.5vw;
+	line-height: 1.2em;
+	letter-spacing: -0.01em;
+	flex:0 0 50%;
+
+	color: white;
 	width:50vw;
 	height:60vh;
 	border-radius: 50%;
-	background-color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	box-shadow: inset 30px 30px 80px black;
+	background-color: black;
+	padding-top: 17vh;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	
+	text-align: center;
+	box-shadow: inset 25px 10px 30px white;
+}
+
+.about-caption {
+	/*text-decoration: underline;*/
+	
+	font-family: arial narrow;
+	
+}
+
+.about-text span {
+	font-style: italic;
+	text-shadow: 0px 0px 8px white;
+	text-decoration: underline;
 }
 
 
