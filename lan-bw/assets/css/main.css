@@ -181,6 +181,7 @@ iframe {
 	text-shadow: 0px 0px 10px white;
 	font-family: times;
 	text-decoration: none;
+	cursor:url('https://shiyayuan.github.io/lan-bw/assets/images/butterfly2.png'), pointer;
 }
 
 .about {
