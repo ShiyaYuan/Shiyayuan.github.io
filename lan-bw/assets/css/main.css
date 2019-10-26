@@ -1,13 +1,24 @@
 body {
 	font-family: arial;
 	font-size: 3vw;
-	background-color: black;
+	background-color: green;
+
+	cursor:url('file:///Users/CocoYuan/Desktop/dpub-2/sublime/lan-bw/assets/images/butterfly2.png'), pointer;
+}
+
+
+.cursor {
+	cursor:url('file:///Users/CocoYuan/Desktop/dpub-2/sublime/lan-bw/assets/images/butterfly2.png'), auto;
 }
 
 a {
 	color:white;
 	text-decoration: underline;
 
+}
+
+a:hover {
+	cursor:url('file:///Users/CocoYuan/Desktop/dpub-2/sublime/lan-bw/assets/images/butterfly2.png'), pointer;
 }
 
 .grid a:hover {
@@ -101,18 +112,23 @@ iframe {
 	justify-content: center;
 	align-items: center;
 	perspective: 1000px;
+
 }
 
 .left {
 	/*border:2px solid red;*/
-	margin:2vw;
+	margin:1vw;
 	color: white;
-	flex:0 0 40%;
+	flex:0 0 42%;
 	height: 90vh;
 	overflow: scroll;
-	background-color: lime;
-	box-shadow: 0px 0px 30px lime;
-	transform: rotateY(20deg);
+	/*background-color: darkgray;*/
+	/*border:1px solid white;*/
+	/* background-image: linear-gradient(to right, red, black, lime);*/
+
+
+	/*box-shadow: 0px 0px 30px lime;*/
+	/*transform: rotateY(20deg);*/
 }
 
 .left-content {
@@ -124,14 +140,17 @@ iframe {
 .right {
 	/*border:2px solid red;*/
 
-	margin:2vw;
+	margin:1vw;
 	color: white;
-	flex:0 0 40%;
+	flex:0 0 42%;
 	height: 90vh;
 	overflow: scroll;
-	background-color: blueviolet;
-	box-shadow: 0px 0px 30px blueviolet;
-	transform: rotateY(-20deg);
+	/*background-color: red;*/
+	/*border:1px solid white;*/
+
+	/*background-color: blueviolet;*/
+	/*box-shadow: 0px 0px 30px blueviolet;*/
+	/*transform: rotateY(-20deg);*/
 
 }
 
@@ -191,7 +210,7 @@ iframe {
 	width:50vw;
 	height:60vh;
 	border-radius: 50%;
-	background-color: black;
+	background-color: green;
 	padding-top: 17vh;
 	padding-left: 2vw;
 	padding-right: 2vw;
@@ -322,7 +341,49 @@ iframe {
 
 
 
+.bg {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	z-index: -1;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 
+}
+
+.float {
+	position: absolute;
+	width: 8vw;
+}
+
+.float img {
+	width: 100%;
+}
+
+
+.bg-left {
+	flex:0 0 50%;
+	height: 100vh;
+	/*filter: blur(15px);*/
+	/*background-image: linear-gradient(to right, skyblue,red, white, red, lime,white, lime,purple);*/
+	/*background-color: black;*/
+
+}
+
+.bg-right {
+	flex:0 0 50%;
+	height: 100vh;
+	/*filter: blur(15px);*/
+	/*background-image: linear-gradient(to right, skyblue,red,lime, purple);*/
+	/*background-color: gray;*/
+}
+
+.bg img {
+	width: 100%;
+	
+}
 
 
 
