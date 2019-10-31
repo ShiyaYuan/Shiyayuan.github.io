@@ -63,6 +63,8 @@ a:hover {
 
 
 .iframe-container {
+	cursor:url('https://shiyayuan.github.io/lan-bw/assets/images/butterfly2.png'), pointer;
+
 	z-index: 3;
 	width:50vw;
 	height:60vh;
@@ -86,10 +88,23 @@ a:hover {
 
 
 .iframe-container:hover {
+	cursor:url('https://shiyayuan.github.io/lan-bw/assets/images/butterfly2.png'), pointer;
 	transform: scaleX(-1);
 }
 
+.iframe-border {
+	position: absolute;
+	width:50vw;
+	height:60vh;
+	border-radius: 50%;
+	box-shadow: inset 10px 17px 40px white;
+	pointer-events: none;
+
+}
+
 iframe {
+	cursor:url('https://shiyayuan.github.io/lan-bw/assets/images/butterfly2.png'), pointer;
+	
 	padding-top: 0.5vh;
 	box-shadow: inset 10px 17px 40px white;
 	width:100vw;
@@ -189,6 +204,8 @@ iframe {
 	z-index: 3;
 	width:100vw;
 	height:100vh;
+
+
 	
 	position: absolute;
 
@@ -206,7 +223,7 @@ iframe {
 	line-height: 1.2em;
 	letter-spacing: -0.01em;
 	flex:0 0 50%;
-
+	overflow: scroll;
 	color: white;
 	width:50vw;
 	height:60vh;
@@ -247,8 +264,8 @@ iframe {
 	justify-content: center;
 	align-items: center;
 
-
 }
+
 
 .container iframe {
 	width: 30vw;

@@ -14,6 +14,20 @@ a:hover {
 	color: blue;
 }
 
+.italic {
+	font-style: italic;
+}
+
+.bold {
+	font-weight:bold;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+
+
 .list-item {
 	line-height: 2em;
 	cursor: pointer;
@@ -56,7 +70,7 @@ a:hover {
 	position: absolute;
 	display: flex;
 	flex-wrap: wrap;
-	font-size: 1.2vw;
+	font-size: 1.5vw;
 	/*letter-spacing: -0.01em;*/
 	padding: 12px;
 	overflow: scroll;
@@ -66,7 +80,7 @@ a:hover {
 
 .my-name {
 	/*border: 2px solid red;*/
-	flex:0 0 10%;
+	flex:0 0 11%;
 }
 
 .about-me {
@@ -101,7 +115,7 @@ a:hover {
 
 /* individual project page */
 .project-text {
-	
+	/*letter-spacing: -0.01em;*/
 }
 
 .project-img {
@@ -112,6 +126,17 @@ a:hover {
 .project-img img {
 	width: 100%;
 	margin-bottom: 20px;
+}
+
+.year {
+	width: 6vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 1.5vw;
+	border:2px solid black;
+	border-radius: 50%;
 }
 
 
@@ -157,6 +182,18 @@ a:hover {
 }
 
 
+
+
+.pt-image {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pt-image img {
+	width: 40%;
+}
 
 
 

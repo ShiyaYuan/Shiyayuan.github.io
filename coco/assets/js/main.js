@@ -39,6 +39,11 @@ $( document ).ready(function() {
 		$('.project-5-thumbnail').removeClass('hide');
 	});
 
+	$('.project-6').mouseenter(function(){
+		hideAll();
+		$('.project-6-thumbnail').removeClass('hide');
+	});
+
 
 // click link and pause animation
 
@@ -153,6 +158,59 @@ $('.project-4').click(function() {
   $('#page6').addClass('hide');
 });
 
+
+
+
+$('.project-5').click(function() {
+  $('#page5').removeClass('hide');
+});
+
+$('.project-5').click(function() {
+  $('#page1').addClass('hide');
+});
+
+$('.project-5').click(function() {
+  $('#page2').addClass('hide');
+});
+
+$('.project-5').click(function() {
+  $('#page3').addClass('hide');
+});
+
+$('.project-5').click(function() {
+  $('#page4').addClass('hide');
+});
+
+$('.project-5').click(function() {
+  $('#page6').addClass('hide');
+});
+
+
+
+
+$('.project-6').click(function() {
+  $('#page6').removeClass('hide');
+});
+
+$('.project-6').click(function() {
+  $('#page1').addClass('hide');
+});
+
+$('.project-6').click(function() {
+  $('#page2').addClass('hide');
+});
+
+$('.project-6').click(function() {
+  $('#page3').addClass('hide');
+});
+
+$('.project-6').click(function() {
+  $('#page4').addClass('hide');
+});
+
+$('.project-6').click(function() {
+  $('#page5').addClass('hide');
+});
 
 // individual page's NAV
 
