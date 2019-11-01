@@ -121,6 +121,7 @@ a:hover {
 
 .iframe-container:hover {
 	cursor:url('https://shiyayuan.github.io/lan-bw/assets/images/butterfly2.png'), pointer;
+	
 	transform: scaleX(-1);
 }
 
@@ -236,16 +237,15 @@ iframe {
 	z-index: 3;
 	width:100vw;
 	height:100vh;
-
-
-	
 	position: absolute;
-
-	
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+}
+
+.about-text:hover {
+	transform: scaleX(-1);
 }
 
 .about-text {
