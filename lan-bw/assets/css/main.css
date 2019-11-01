@@ -6,6 +6,38 @@ body {
 	cursor:url('https://shiyayuan.github.io/lan-bw/assets/images/butterfly2.png'), pointer;
 }
 
+body.page-love .bg-love {
+	display: flex;
+}
+
+body.page-flower .bg-flower {
+	display: flex;
+}
+
+.bg-love {
+	display: none;
+}
+
+.bg-flower {
+	display: none;
+}
+
+body.page-love .iframe-love {
+	display: flex;
+}
+
+body.page-flower .iframe-flower {
+	display: flex;
+}
+
+.iframe-flower {
+	display: none;
+}
+
+.iframe-love{
+	display: none;
+}
+
 
 .cursor {
 	cursor:url('https://shiyayuan.github.io/lan-bw/assets/images/butterfly2.png'), auto;
@@ -422,6 +454,10 @@ iframe {
 
 .a-show {
 	visibility: show;
+}
+
+.iframe-love {
+	display: none;
 }
 
 

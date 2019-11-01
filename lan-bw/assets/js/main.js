@@ -30,6 +30,17 @@ $('.about-icon').click(function() {
 
 // bg-change on refresh
 
+(function($){
+
+	$(document).ready(function() {
+		var classes = [ 'page-love', 'page-flower' ];
+		$('body').each(function(i) { 
+			$(this).addClass(classes[ Math.floor( Math.random()*classes.length ) ] );
+		});
+	});
+
+})(jQuery);
+
 
 
 
