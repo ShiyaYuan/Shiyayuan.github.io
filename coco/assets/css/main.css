@@ -1,5 +1,5 @@
 body {
-	font-family: arial;
+	font-family: 'hn-futura', arial;
 	/*background-color: green;*/
 	background-color: white;
 }
@@ -317,6 +317,18 @@ a:hover {
   	-moz-animation-play-state:paused;
   	-o-animation-play-state:paused;
   	animation-play-state:paused;
+}
+
+
+
+/* FONT */
+@font-face{ 
+	font-family: 'MyWebFont';
+	src: url('WebFont.eot');
+	src: url('WebFont.eot?#iefix') format('embedded-opentype'),
+	     url('WebFont.woff') format('woff'),
+	     url('WebFont.ttf') format('truetype'),
+	     url('WebFont.svg#webfont') format('svg');
 }
 
 
