@@ -1,5 +1,5 @@
 body {
-	font-family: 'hn-futura', arial;
+	font-family: arial;
 	/*background-color: green;*/
 	background-color: white;
 }
@@ -88,18 +88,31 @@ a:hover {
 
 /* individual project page */
 
+.page-project-list {
+	/*border: 2px solid red;*/
+	flex:0 0 90%;
+	height: 100vh;
+	overflow: scroll;	
+	cursor: default;
+}
+
+.page-list-item {
+	width: 40vw;
+}
+
 .project-text {
 	/*letter-spacing: -0.01em;*/
+	width: 40vw;
 }
 
 .project-img {
-	width: 40vw;
-	margin-top: 100px;
+	width: 82vw;
+	margin-top:100px;
 }
 
 .project-img img {
 	width: 100%;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 .year {
@@ -128,6 +141,7 @@ a:hover {
 }
 
 .nav-list {
+	width: 40vw;
 	cursor:pointer;
 }
 
@@ -323,10 +337,10 @@ a:hover {
 
 /* FONT */
 @font-face{ 
-	font-family: 'MyWebFont';
+	font-family: 'hn-futura';
 	src: url('WebFont.eot');
 	src: url('WebFont.eot?#iefix') format('embedded-opentype'),
-	     url('WebFont.woff') format('woff'),
+	     url('../fonts/hershey-noailles-futural-1-1-WebFont.woff') format('woff'),
 	     url('WebFont.ttf') format('truetype'),
 	     url('WebFont.svg#webfont') format('svg');
 }
