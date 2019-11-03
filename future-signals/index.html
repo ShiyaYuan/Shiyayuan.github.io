@@ -11,75 +11,84 @@
   </head>
   <body>
     <!-- start here -->
+    <div class="title-bg">
+      <img src="assets/images/title2.png">
+    </div>
 
-    <div class="nav">
+    <div class="nav hide">
       <div class="nav-box"></div>
       <div class="sidebar">
-        <a class="nav-item" href="index.html">Future Signals</a>
+        <a class="nav-item" href="index.html">Future Signals</a><br>
         <a class="nav-item" href="essay.html">?</a>
         <div class="nav-header">Filter by:</div>
-        <div class="nav-item btn-all">All</div>
-        <div class="nav-item btn-kinect">Infrared View</div>
-        <div class="nav-item btn-tracking">Mood Analysis</div>
-        <div class="nav-item btn-car">Daily Activity Monitoring</div>
+        <div class="nav-item btn-all">All</div><br>
+        <div class="nav-item btn-face">Faces</div><br>
+        <div class="nav-item btn-infrared">Infrared View</div><br>
+        <div class="nav-item btn-mood">Mood Analysis</div><br>
+        <div class="nav-item btn-activities">Daily Activity Monitoring</div>
       </div>
     </div>
 
-    <div class="cctv 4-shower">
-      <video width="500"  autoplay loop>
-          <source src="assets/video/4-shower.mp4" type="video/mp4">
-        </video>
-    </div>
+    
 
-    <div class="cctv 1-cook">
-      <video width="500"  autoplay loop>
+    
+
+    
+
+    <div class="nav-video">
+
+      <div class="cctv 1-cook sim1-popup">
+        <video width="500"  autoplay loop muted>
           <source src="assets/video/1-cook.mp4" type="video/mp4">
         </video>
+      </div>
+
+      <div class="cctv 2-sleep sim2-popup">
+        <video width="500"  autoplay loop muted>
+          <source src="assets/video/2-sleep.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="cctv 3-eat sim3-popup">
+        <video width="500"  autoplay loop muted>
+          <source src="assets/video/3-eat.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="cctv 4-shower sim4-popup">
+        <video width="500"  autoplay loop muted>
+          <source src="assets/video/4-shower.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="cctv 5-piano sim5-popup">
+        <video width="500"  autoplay loop muted>
+          <source src="assets/video/5-piano.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="cctv 6-games sim6-popup">
+        <video width="500"  autoplay loop muted>
+          <source src="assets/video/6-games.mp4" type="video/mp4">
+        </video>
+      </div>
+
     </div>
 
-    <div class="title">
-      <img src="assets/images/">
-    </div>
+    
 
  
     <div class="research">   <!-- start of reserch div -->
 
-      
 
-      <div class="research-item infrared"> 
-        <video width="600"  autoplay loop>
-          <source src="assets/images/1-ir3.mp4" type="video/mp4">
-        </video>
+      <div class="research-item face sim1-link">
+        <img src="assets/images/1-2.png">
+        <span>01</span>
       </div>
 
-      <div class="research-item infrared"> 
-        <video width="450"  autoplay loop>
-          <source src="assets/images/3-ir1.mp4" type="video/mp4">
-        </video>
-      </div>
-
-      <div class="research-item infrared"> 
-        <video width="390"  autoplay loop>
-          <source src="assets/images/2-ir1.mp4" type="video/mp4">
-        </video>
-      </div>
-
-      <div class="research-item infrared"> 
-        <video width="750"  autoplay loop>
-          <source src="assets/images/4-ir1.mp4" type="video/mp4">
-        </video>
-      </div>
-
-      <div class="research-item infrared"> 
-        <video width="470"  autoplay loop>
-          <source src="assets/images/5-ir1.mp4" type="video/mp4">
-        </video>
-      </div>
-
-      <div class="research-item infrared"> 
-        <video width="550"  autoplay loop>
-          <source src="assets/images/7-ir1.mp4" type="video/mp4">
-        </video>
+      <div class="research-item face sim4-link">
+        <img src="assets/images/4-2.png"> 
+        <span>04</span>
       </div>
 
       <div class="research-item mood-analysis"> 
@@ -87,135 +96,175 @@
         <span>File 2 (mood analysis)</span>
       </div>
 
+      <div class="research-item infrared"> 
+        <video width="450"  autoplay loop muted>
+          <source src="assets/images/3-ir1.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      
+      
+      <div class="research-item daily-activity">
+        <img src="assets/images/4-toilet2.png"> 
+        <span>04 going to the toilet</span>
+      </div>
+
+      <div class="research-item infrared"> 
+        <video width="600"  autoplay loop muted>
+          <source src="assets/images/1-ir3.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="research-item daily-activity">
+        <img src="assets/images/1-books2.png"> 
+        <span>01 getting a book</span>
+      </div>
+
+      <div class="research-item mood-analysis">
+        <img src="assets/images/3-zoneout.png">
+        <span>File 1 (face)</span>
+      </div> 
+
+      <div class="research-item face sim2-link"> 
+        <img src="assets/images/2-2.png">
+        <span>02</span>
+      </div>
+
+      <div class="research-item infrared"> 
+        <video width="750"  autoplay loop muted>
+          <source src="assets/images/4-ir1.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="research-item daily-activity">
+        <img src="assets/images/4-eat2.png"> 
+        <span>04 eating</span>
+      </div>
+
+       <div class="research-item face sim3-link">
+        <img src="assets/images/3-2.png"> 
+        <span>03</span>
+      </div>
+
       <div class="research-item mood-analysis"> 
         <img src="assets/images/2-happy.png">
         <span>File 2 (mood analysis)</span>
       </div>
+
+      <div class="research-item daily-activity">
+        <img src="assets/images/6-eat2.png"> 
+        <span>06 eating</span>
+      </div>
+
+       <div class="research-item infrared"> 
+        <video width="470"  autoplay loop muted>
+          <source src="assets/images/5-ir1.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="research-item daily-activity">
+        <img src="assets/images/1-cook2.png"> 
+        <span>01 cooking</span>
+      </div>
+
+
+      <div class="research-item infrared"> 
+        <video width="550"  autoplay loop muted>
+          <source src="assets/images/7-ir1.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="research-item daily-activity">
+        <img src="assets/images/5-game2.png"> 
+        <span>05 gaming</span>
+      </div>
+
+      
       
       <div class="research-item mood-analysis"> 
         <img src="assets/images/4-happy.png">
         <span>File 2 (mood analysis)</span>
       </div>
 
-      <div class="research-item face">
+      <div class="research-item mood-analysis">
         <img src="assets/images/6-hmm.png">
         <span>File 1 (face)</span>
       </div>
 
-      <div class="research-item face">
+      <div class="research-item infrared"> 
+        <video width="390"  autoplay loop muted>
+          <source src="assets/images/2-ir1.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="research-item daily-activity">
+        <img src="assets/images/3-bath2.png"> 
+        <span>03 in the bath</span>
+      </div>
+
+      <div class="research-item mood-analysis">
         <img src="assets/images/3-smile.png">
         <span>File 1 (face)</span>
-      </div>
+      </div> 
 
       <div class="research-item mood-analysis"> 
         <img src="assets/images/5-happy2.png">
         <span>File 2 (mood analysis)</span>
       </div>
 
-       <div class="research-item face">
+      <div class="research-item daily-activity">
+        <img src="assets/images/1-sleep2.png"> 
+        <span>01 sleeping</span>
+      </div>
+
+      <div class="research-item daily-activity">
+        <img src="assets/images/3-bath2.png"> 
+        <span>03 in the bath</span>
+      </div>
+
+       <div class="research-item mood-analysis">
         <img src="assets/images/6-sus.png">
         <span>File 1 (face)</span>
       </div>
 
-      <div class="research-item face">
-        <img src="assets/images/3-zoneout.png">
-        <span>File 1 (face)</span>
-      </div>
+          
 
-      <div class="research-item face"> 
-        <img src="assets/images/2-2.png">
-        <span>File 2 (face)</span>
-      </div>
-
-      <div class="research-item face">
-        <img src="assets/images/3-2.png"> 
-        <span>File 3 (face)</span>
-      </div>
-
-      <div class="research-item face">
-        <img src="assets/images/4-2.png"> 
-        <span>File 4 (face)</span>
-      </div>
-
-      <div class="research-item face">
+      <div class="research-item face sim5-link">
         <img src="assets/images/5-2.png"> 
-        <span>File 5 (face)</span>
-      </div>
-
-      <div class="research-item face">
-        <img src="assets/images/6-3.png"> 
-        <span>File 5 (face)</span>
-      </div>
-      
-      <div class="research-item daily-activity">
-        <img src="assets/images/6-cook.png"> 
-        <span>File 5 (daily activity)</span>
+        <span>05</span>
       </div>
 
       <div class="research-item daily-activity">
+        <img src="assets/images/3-sleep2.png"> 
+        <span>03 sleeping</span>
+      </div>
+
+      <!-- <div class="research-item daily-activity">
         <img src="assets/images/6-fishing.png"> 
-        <span>File 5 (daily activity)</span>
+        <span>06 fishing</span>
+      </div> -->
+
+
+
+      <div class="research-item face sim6-link">
+        <img src="assets/images/6-3.png"> 
+        <span>06</span>
       </div>
 
-      <div class="research-item daily-activity">
+      <!-- <div class="research-item daily-activity">
         <img src="assets/images/r-chess.png"> 
-        <span>File 5 (daily activity)</span>
-      </div>
+        <span>girl playing chess</span>
+      </div> -->
 
-      <div class="research-item daily-activity">
-        <img src="assets/images/5-game.png"> 
-        <span>File 5 (daily activity)</span>
-      </div>
-
-      <div class="research-item daily-activity">
-        <img src="assets/images/4-toilet.png"> 
-        <span>File 5 (daily activity)</span>
-      </div>
-
-      <div class="research-item daily-activity">
-        <img src="assets/images/4-eat.png"> 
-        <span>File 5 (daily activity)</span>
-      </div>
-
-      <div class="research-item daily-activity">
-        <img src="assets/images/6-eat.png"> 
-        <span>File 5 (daily activity)</span>
-      </div>
-
-      <div class="research-item daily-activity">
-        <img src="assets/images/1-cook.png"> 
-        <span>File 5 (daily activity)</span>
-      </div>
-
-      <div class="research-item daily-activity">
-        <img src="assets/images/3-bath.png"> 
-        <span>File 5 (daily activity)</span>
-      </div>
-
-      <div class="research-item daily-activity">
-        <img src="assets/images/3-sleep.png"> 
-        <span>File 5 (daily activity)</span>
-      </div>
-      
-      <div class="research-item daily-activity">
+      <!-- <div class="research-item daily-activity">
         <img src="assets/images/6-cook.png"> 
-        <span>File 5 (daily activity)</span>
-      </div>
+        <span>06 cooking</span>
+      </div> -->
 
-      <div class="research-item daily-activity">
-        <img src="assets/images/1-books.png"> 
-        <span>File 5 (daily activity)</span>
-      </div>
-
-      <div class="research-item daily-activity">
-        <img src="assets/images/1-sleep.png"> 
-        <span>File 5 (daily activity)</span>
-      </div>
-
-      <div class="research-item daily-activity">
+      <!-- <div class="research-item daily-activity">
         <img src="assets/images/6-sleep.png"> 
-        <span>File 5 (daily activity)</span>
-      </div>
+        <span>06 sleeping</span>
+      </div> -->
       
       
 

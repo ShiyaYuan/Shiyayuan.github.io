@@ -1,6 +1,17 @@
 $(document).ready(function(){
 	console.log("The page is ready!");
 
+	// title click away
+	$('.research').click(function(){
+		$('.title-bg').addClass('hide');
+	});
+
+	$('.research').click(function(){
+		$('.nav').removeClass('hide');
+	});
+
+
+
 
 	// toggle large calss on research item	
 
@@ -21,20 +32,25 @@ $(document).ready(function(){
 
 	// Button filters
 
-	$('.btn-car').click(function(){
+	$('.btn-face').click(function(){
 		hideAll();
-		$('.car').removeClass('hide');
+		$('.face').removeClass('hide');
 	});
 
-	$('.btn-kinect').click(function(){
+	$('.btn-infrared').click(function(){
 		hideAll();
-		$('.kinect').removeClass('hide');
+		$('.infrared').removeClass('hide');
+	});
+
+	$('.btn-mood').click(function(){
+		hideAll();
+		$('.mood-analysis').removeClass('hide');
 
 	});
 
-	$('.btn-tracking').click(function(){
+	$('.btn-activities').click(function(){
 		hideAll();
-		$('.tracking').removeClass('hide');
+		$('.daily-activity').removeClass('hide');
 
 	});
 
@@ -43,6 +59,68 @@ $(document).ready(function(){
 	$(".btn-all").click(function(){
 		$('.research-item').removeClass('hide')
 	});
+
+	// cctv footage hover
+
+	$('.sim1-link').mouseenter(function() {
+    	$('.sim1-popup').addClass('n-show');
+    	console.log("sim1 link active");
+
+  	});
+
+	$('.sim1-link').mouseleave(function() {
+    	$('.sim1-popup').removeClass('n-show');
+ 	 });
+
+	$('.sim2-link').mouseenter(function() {
+    	$('.sim2-popup').addClass('n-show');
+
+  	});
+
+	$('.sim2-link').mouseleave(function() {
+    	$('.sim2-popup').removeClass('n-show');
+ 	 });
+
+	$('.sim3-link').mouseenter(function() {
+    	$('.sim3-popup').addClass('n-show');
+
+  	});
+
+	$('.sim3-link').mouseleave(function() {
+    	$('.sim3-popup').removeClass('n-show');
+ 	 });
+
+	$('.sim4-link').mouseenter(function() {
+    	$('.sim4-popup').addClass('n-show');
+  	});
+
+	$('.sim4-link').mouseleave(function() {
+    	$('.sim4-popup').removeClass('n-show');
+ 	 });
+
+	$('.sim5-link').mouseenter(function() {
+    	$('.sim5-popup').addClass('n-show');
+  	});
+
+	$('.sim5-link').mouseleave(function() {
+    	$('.sim5-popup').removeClass('n-show');
+ 	 });
+
+	$('.sim6-link').mouseenter(function() {
+    	$('.sim6-popup').addClass('n-show');
+  	});
+
+	$('.sim6-link').mouseleave(function() {
+    	$('.sim6-popup').removeClass('n-show');
+ 	 });
+
+
+
+
+
+
+
+
 
 
 

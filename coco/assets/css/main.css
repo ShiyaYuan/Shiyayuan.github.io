@@ -219,6 +219,15 @@ a:hover {
 	width: 100%;
 }
 
+.coco-thumbnail {
+	width: 20vw;
+	z-index: 9;
+	text-align: center;
+	position: absolute;
+  	height:40vh;
+  	transform-style: preserve-3d;
+}
+
 .cube {
 	pointer-events: none;
 
@@ -275,7 +284,7 @@ a:hover {
   }
 
 .box-border {
-	border:1px solid black;
+	/*border:1px solid black;*/
 	width:30vw;
   	height:30vh;
   	transform-style: preserve-3d;
