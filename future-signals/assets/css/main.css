@@ -41,12 +41,16 @@ a {
 }
 
 .nav-item {
-	
+
 	cursor: pointer;
 	background-color: red;
 	color: #000;
 	text-decoration: none;
 	display:inline;
+}
+
+span {
+	/*background-color: gray;*/
 }
 
 .nav-header {
@@ -142,9 +146,10 @@ a {
 }
 
 .text{
-	flex: 0 0 66.666%;
+	flex: 0 0 50%;
 	padding: 20px;
 	color: white;
+	margin-right: 50px;
 
 }
 
@@ -156,6 +161,7 @@ a {
 .text p{
 	margin-bottom: 25px;
 	font-size: 20px;
+	line-height: 1.1em;
 
 }
 
@@ -164,16 +170,15 @@ a {
 	padding: 20px;
 	margin-top: 130px;
 
+	color: gray;
+	font-size: 14px;
+	line-height: 1.2em;
+
 }
 
 .figure img{
 	width: 100%;
 
-}
-
-.figure span{
-	color: gray;
-	font-size: 14px;
 }
 
 

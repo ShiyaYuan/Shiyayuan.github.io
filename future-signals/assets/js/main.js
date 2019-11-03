@@ -10,6 +10,10 @@ $(document).ready(function(){
 		$('.nav').removeClass('hide');
 	});
 
+	$('.research').click(function(){
+		$('.nav-video').removeClass('hide');
+	});
+
 
 
 
