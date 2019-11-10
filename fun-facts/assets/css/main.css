@@ -33,7 +33,7 @@ a {
 	position: absolute;
 	width: 100vw;
 	height:100vh;
-	background-image: linear-gradient(to right, #02defe,lime,lime,lime,lime,lime,lime,#fa1819);
+	background-image: linear-gradient(to right, #02defe,#2cfa4d,#2cfa4d,#2cfa4d,#2cfa4d,#2cfa4d,#2cfa4d,#fa1819);
 }
 
 .f-bg {
