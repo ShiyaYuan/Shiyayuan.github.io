@@ -87,6 +87,33 @@ $('.about').click(function() {
 
 
 
+// Gallery trigger
+$('.view-img-btn').click(function() {
+  $('.img-page').toggleClass('a-show');
+});
+
+$('.view-img-btn').click(function() {
+  $('.bg').toggleClass('blur');
+});
+
+$('.view-img-btn').click(function() {
+  $('.table').toggleClass('blur');
+});
+
+$('.view-img-btn').click(function() {
+  $('.bling').toggleClass('blur');
+});
+
+$('.view-img-btn').click(function() {
+  $('.bg-nav').toggleClass('hide');
+});
+
+
+
+$('.img-container').click(function() {
+  $(this).toggleClass('large');
+});
+
 
 
 // end here

@@ -130,6 +130,8 @@ li {
 	position: absolute;
 	z-index: 2;
 	perspective: 700px;
+
+	cursor: default;
 	
 }
 
@@ -146,6 +148,8 @@ li {
 	position: absolute;
 	z-index: 2;
 	perspective: 900px;
+
+	cursor: default;
 }
 
 .video2 {
@@ -160,6 +164,8 @@ li {
 	position: absolute;
 	z-index: 9;
 	perspective: 1500px;
+
+	cursor: default;
 }
 
 .video3 {
@@ -174,6 +180,8 @@ li {
 	position: absolute;
 	z-index: 2;
 	perspective: 1800px;
+
+	cursor: default;
 }
 
 .video4 {
@@ -188,6 +196,8 @@ li {
 	position: absolute;
 	z-index: 2;
 	perspective: 1600px;
+
+	cursor: default;
 }
 
 .video5 {
@@ -435,6 +445,39 @@ li {
 }
 
 
+/* image page */
+.img-page {
+	z-index: 999;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	overflow: scroll;
+
+	padding: 30px;
+	margin-top: 60px;
+
+	visibility: hidden;
+	
+}
+
+.img-container {
+	flex:0 0 20%;
+	margin:20px;
+	padding: 10px;
+
+	transition: 2s;
+
+	cursor: zoom-in;
+}
+
+.img-container img {
+	width: 100%;
+}
+
+
 
 
 
@@ -450,7 +493,8 @@ li {
 
 .large {
 	transition: 2s;
-	transform: rotateY(0deg);
+	flex:0 0 90%;
+	cursor: zoom-out;
 }
 
 .show {
