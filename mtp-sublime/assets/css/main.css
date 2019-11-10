@@ -132,6 +132,7 @@ li {
 	perspective: 700px;
 
 	cursor: default;
+
 	
 }
 
@@ -468,7 +469,7 @@ li {
 	margin:20px;
 	padding: 10px;
 
-	transition: 2s;
+	/*transition: 2s;*/
 
 	cursor: zoom-in;
 }
