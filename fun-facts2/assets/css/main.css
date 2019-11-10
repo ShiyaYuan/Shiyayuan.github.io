@@ -1,0 +1,277 @@
+body {
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 32px;
+
+	
+}
+
+a {
+	
+}
+
+/* shrimp #02defe */
+/* octopus #2cfa4d */
+/* fish #fa1819 */
+
+
+.index-grid {
+	z-index: 9;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+
+	
+}
+
+.row1 {
+	flex:0 0 100%;
+	height:20vh;
+}
+
+.row1-content {
+	height:20vh;
+}
+
+.row1-content img {
+	width: 100%;
+	height: 100%;
+}
+
+.row2 {
+	flex:0 0 100%;
+	height:20vh;
+	display: flex;
+
+}
+
+
+.row2-content1 {
+	flex: 0 0 48%;
+	height:20vh;
+	margin-right: 30px;
+	background-color: none;
+}
+
+.row2-content2 {
+	flex: 0 0 48%;
+	height:20vh;
+}
+
+.row2-content1 img {
+	width: 100%;
+	height: 100%;
+
+}
+
+.row2-content2 img {
+	width: 100%;
+	height: 100%;
+
+}
+
+.row2-text {
+	position: absolute;
+	font-size: 5vw;
+	font-family: 'syne-italic';
+}
+
+.row3 {
+	flex:0 0 100%;
+	height:20vh;
+}
+
+.row3-content {
+	height:20vh;
+}
+
+.row3-content img {
+	width: 100%;
+	height: 100%;
+}
+
+.row4 {
+	flex:0 0 100%;
+	height:20vh;
+}
+
+.row4-content {
+	height:20vh;
+}
+
+.row4-content img {
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+/* pages */
+.page-grid {
+	width: 100vw;
+	padding: 20px;
+}
+
+.shrimp-page {
+	background-color: #02defe;
+}
+
+.fish-page {
+	background-color: #fa1819;
+}
+
+.octopus-page {
+	background-color: #2cfa4d;
+}
+
+.shrimp-title {
+	flex:0 0 100%;
+	height: 25vh;
+}
+
+.shrimp-title img {
+	width:100%;
+	height:100%;
+}
+
+.shrimp-text {
+	padding: 20px;
+	margin-top: 20px;
+	font-family: 'syne-italic';
+	font-size: 5vw;
+}
+
+.shrimp-img {
+	flex:0 0 100%;
+	background-color: #02defe;
+}
+
+.shrimp-img img {
+	width:100%;
+}
+
+.fish-img {
+	flex:0 0 100%;
+	background-color: #fa1819;
+}
+
+.fish-img img {
+	width:100%;
+}
+
+.octopus-img {
+	flex:0 0 100%;
+	background-color: #2cfa4d;
+}
+
+.octopus-img img {
+	width:100%;
+}
+
+.bg-color {
+	z-index: -1;
+	width: 100vw;
+	height:100vh;
+}
+
+.bg {
+	z-index: -2;
+	position: absolute;
+	background-image: linear-gradient(to left bottom, #fa1819,#02defe,lime);
+	width: 100vw;
+	height:100vh;
+}
+
+.f-bg {
+	position: absolute;
+	background-color: #fa1819;
+	width: 100vw;
+	height:100vh;
+}
+
+.s-bg {
+	position: absolute;
+	background-color: #02defe;
+	width: 100vw;
+	height:100vh;
+}
+
+.o-bg {
+	position: absolute;
+	background-color: #2cfa4d;
+	width: 100vw;
+	height:100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* interactive */
+.hide {
+	visibility: hidden;
+}
+
+.show {
+	visibility: show;
+}
+
+.expand {
+	flex: 0 0 100%;
+	height:100vh;
+}
+
+
+
+
+/* FONT */
+@font-face{ 
+	font-family: 'syne-italic';
+	src: url('../fonts/Syne-italic.eot');
+	src: url('WebFont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/Syne-italic.woff') format('woff'),
+	     url('WebFont.ttf') format('truetype'),
+	     url('WebFont.svg#webfont') format('svg');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
