@@ -61,12 +61,33 @@ li {
 	width:100%;
 }
 
-.bling {
-	z-index: 3;
+
+.book-icon {
+	z-index: 2;
 	width:10vw;
 	position: fixed;
 	margin-left: 27vw;
 	margin-top: 70vh;
+
+	cursor: pointer;
+}
+
+.book-icon:hover {
+	
+}
+
+.book-icon img {
+	width: 100%;
+}
+
+.bling {
+	z-index: 3;
+	width:10vw;
+	position: fixed;
+	margin-left: 30vw;
+	margin-top: 70vh;
+
+	pointer-events: none;
 }
 
 .bling img {
@@ -141,7 +162,9 @@ li {
 	position: absolute;
 	margin-left: 5vw;
 	margin-top:16vh;
-	transform: rotateY(25deg)
+	transform: rotateY(25deg);
+
+	transition: 2s;
 
 }
 
@@ -158,7 +181,9 @@ li {
 	position: absolute;
 	margin-left: 0vw;
 	margin-top:40vh;
-	transform: rotateY(45deg)
+	transform: rotateY(45deg);
+
+	transition: 2s;
 }
 
 .videowrapper-3 {
@@ -174,7 +199,9 @@ li {
 	position: absolute;
 	margin-left: 57vw;
 	margin-top:35vh;
-	transform: rotateY(-65deg)
+	transform: rotateY(-65deg);
+
+	transition: 2s;
 }
 
 .videowrapper-4 {
@@ -190,7 +217,9 @@ li {
 	position: absolute;
 	margin-left: 64vw;
 	margin-top:80vh;
-	transform: rotateY(-55deg)
+	transform: rotateY(-55deg);
+
+	transition: 2s;
 }
 
 .videowrapper-5 {
@@ -206,7 +235,9 @@ li {
 	position: absolute;
 	margin-left: 52vw;
 	margin-top:10vh;
-	transform: rotateY(-65deg)
+	transform: rotateY(-65deg);
+
+	transition: 2s;
 }
 
 
@@ -337,26 +368,32 @@ li {
 	cursor: pointer;
 }
 
-.bg1-trig:hover {
-
- 
-}
-
-
 .bg1-trig {
 	margin-bottom: 5vh;
+
 }
 
 .bg1-trig:hover {
-
+	border-radius: 50%;
+	border:2px solid white;
 }
 
 .bg2-trig {
 	margin-bottom: 5vh;
 }
 
+.bg2-trig:hover {
+	border-radius: 50%;
+	border:2px solid white;
+}
+
 .bg3-trig {
 	margin-bottom: 5vh;
+}
+
+.bg3-trig:hover {
+	border-radius: 50%;
+	border:2px solid white;
 }
 
 .nav {
@@ -441,6 +478,7 @@ li {
 
 }
 
+
 .view-img-text {
 
 }
@@ -508,6 +546,12 @@ li {
 
 .a-show {
 	visibility: visible;
+}
+
+.unfold {
+	transition: 2s;
+	transform: rotateY(0deg);
+	cursor: zoom-out;
 }
 
 
