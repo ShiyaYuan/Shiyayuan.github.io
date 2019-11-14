@@ -73,7 +73,7 @@ li {
 }
 
 .book-icon:hover {
-	
+
 }
 
 .book-icon img {
@@ -514,6 +514,40 @@ li {
 
 .img-container img {
 	width: 100%;
+}
+
+
+
+
+
+/* book scan page*/
+
+.book-scan {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+}
+
+.book-scan-content {
+	flex:0 0 100%;
+	padding: 8vw;
+	text-align: center;
+}
+
+.book-scan-content img{
+	width: 80%;
+}
+
+.book-scan-cover {
+	flex:0 0 100%;
+	padding: 8vw;
+	text-align: center;
+}
+
+.book-scan-cover img{
+	width: 40%;
 }
 
 
