@@ -517,6 +517,16 @@ li {
 }
 
 
+.video-container {
+	margin:20px;
+	padding: 10px;
+}
+
+.video-container video{
+	width:40vw;
+}
+
+
 
 
 
