@@ -17,6 +17,10 @@ a:hover {
 .list-item {
 	line-height: 2em;
 	cursor: pointer;
+	list-style-type: circle;
+}
+
+.underline {
 	text-decoration: underline;
 }
 
@@ -26,7 +30,7 @@ a:hover {
 
 .page-list-item {
 	cursor: pointer;
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 
 .page-list-item:hover {
@@ -105,6 +109,8 @@ a:hover {
 	width: 40vw;
 }
 
+
+
 .project-img {
 	width: 82vw;
 	margin-top:100px;
@@ -113,6 +119,29 @@ a:hover {
 .project-img img {
 	width: 100%;
 	margin-bottom: 40px;
+}
+
+.project-img1 {
+	width: 82vw;
+	margin-top:100px;
+}
+
+.project-img1 img {
+	width: 50%;
+	margin-bottom: 0px;
+}
+
+.project-img2 {
+	width: 82vw;
+	margin-top:100px;
+
+}
+
+.project-img2 img {
+	width: 40%;
+	margin-bottom: 40px;
+	margin-right:40px;
+	box-shadow: 5px 5px 5px grey;
 }
 
 .year {
@@ -148,7 +177,7 @@ a:hover {
 .nav-item {
 	line-height: 2em;
 	cursor: pointer;
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 
 .nav-item:hover {
@@ -180,6 +209,40 @@ a:hover {
 .pt-image img {
 	width: 40%;
 }
+
+
+
+/* book scan page*/
+
+.book-scan {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	background-color: black;
+}
+
+.book-scan-content {
+	flex:0 0 100%;
+	padding: 8vw;
+	text-align: center;
+}
+
+.book-scan-content img{
+	width: 80%;
+}
+
+.book-scan-cover {
+	flex:0 0 100%;
+	padding: 8vw;
+	text-align: center;
+}
+
+.book-scan-cover img{
+	width: 40%;
+}
+
 
 
 
