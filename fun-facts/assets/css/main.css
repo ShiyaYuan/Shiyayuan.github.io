@@ -226,6 +226,7 @@ a {
 	src: url('../fonts/Syne-italic.eot');
 	src: url('WebFont.eot?#iefix') format('embedded-opentype'),
 	     url('../fonts/Syne-italic.woff') format('woff'),
+	     url('../fonts/Syne-italic.woff2') format('woff2'),
 	     url('WebFont.ttf') format('truetype'),
 	     url('WebFont.svg#webfont') format('svg');
 }
