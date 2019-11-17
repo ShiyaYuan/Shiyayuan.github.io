@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-// start here  
+// start here 
 
 $('.nav-close').click(function() {
   $('.nav-popup').toggleClass('hide');
@@ -286,5 +286,10 @@ $('.hover-76').mouseenter(function() {
 
 
 
+
 // end here
 });
+
+$( document ).ready(function() {
+   $('#video').play();
+ });
