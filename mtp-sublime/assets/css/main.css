@@ -70,10 +70,12 @@ li {
 	margin-top: 70vh;
 
 	cursor: pointer;
+	transition: 0.8s;
 }
 
 .book-icon:hover {
-
+	transform: scale(1.5);
+	transition: 0.8s;
 }
 
 .book-icon img {
@@ -130,6 +132,8 @@ li {
 	z-index: 99;
 	margin-left: 40vw;
 	margin-top: 30vh;
+
+	cursor: default;
 }
 
 
