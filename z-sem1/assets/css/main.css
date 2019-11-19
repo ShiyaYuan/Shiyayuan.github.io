@@ -1,8 +1,28 @@
+/* grid */
+
+.grid {
+	display: flex;
+	flex-wrap:wrap; 
+}
+
+.col {
+	padding: 0px;
+}
+
+.content {
+	padding: 10px;
+}
+
+
+
+/* main */
+
+
 .title{
 	font-family: arial;
 	font-size:60px;
 	position: fixed;
-	z-index: 4;
+	z-index: 4; 
 	padding:20px;
 	width:100%;
 	cursor: pointer;
@@ -253,5 +273,471 @@ video{
 	pointer-events: none;
 
 }
+
+
+
+/* pages */
+
+
+
+.info{
+	font-family: arial;
+	font-size:60px;
+	position:relative; 
+	padding: 20px;
+	top:300px;
+
+}
+
+
+.video{
+	position:absolute;
+	z-index: 1;
+	width:35vw;
+	margin-left: 32%;
+	margin-top: 2.1%;
+	display: show;
+}
+
+.video.hide{
+	display: none;
+}
+
+.audio {
+		background-color: white;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+        position: fixed;
+        width:170px;
+        height:120px;
+        top:200px;
+        left:320px;
+        z-index: 2;
+        cursor: pointer;
+        display: show;
+        box-shadow:3px 4px 10px 2px #ccc;
+        font-size: 5vw;
+}
+
+.audio.hide{
+	display:none;
+}
+
+.popup{
+
+}
+
+.page{
+	width:100vw;
+	height:100vh;
+	position: fixed;
+	z-index: 1;
+	display:show;
+}
+
+.yellowbg{
+	width:100vw;
+	height:100vh;
+	position: fixed;
+	background-color: yellow;
+
+}
+
+
+.blankbg{
+	width:38vw;
+}
+.img-bg{
+	width:100%;
+}
+.ezine{
+	margin-left: 31%;
+	margin-top: 1%;
+
+}
+
+.page .text{
+	height:81.2vh;
+	overflow: scroll;
+}
+
+.text{
+	font-family: arial;
+	font-size:25px;
+	width:33vw;
+	position:absolute;
+	margin-top:3%;
+	margin-left: 33%;
+}
+
+.p5{
+	
+}
+
+.highlight{
+	
+	text-decoration:underline;
+}
+
+.pop-1{
+	width:18%;
+	position: absolute;
+	margin-left: 600px;
+	margin-top: 250px;
+	z-index: 1;
+	visibility: hidden;
+}
+
+.pop-21{
+	position: absolute;
+	margin-left: 640px;
+	margin-top: 182px;
+	z-index: 1;
+	visibility: hidden;
+
+}
+
+.pop-22{
+	position: absolute;
+	margin-left: 550px;
+	margin-top: 235px;
+	z-index: 1;
+	visibility:hidden ;
+
+}
+
+.pop-23{
+	position: absolute;
+	margin-left: 820px;
+	margin-top: 235px;
+	z-index: 1;
+	visibility:hidden;
+
+}
+
+.pop-24{
+	position: absolute;
+	margin-left: 665px;
+	margin-top: 285px;
+	z-index: 1;
+	visibility:hidden ;
+
+}
+
+.pop-25{
+	position: absolute;
+	margin-left: 440px;
+	margin-top: 310px;
+	z-index: 1;
+	visibility:hidden ;
+
+}
+
+.pop-26{
+	position: absolute;
+	margin-left: 630px;
+	margin-top: 310px;
+	z-index: 1;
+	visibility:hidden ;
+
+}
+
+.pop-27{
+	position: absolute;
+	margin-left: 780px;
+	margin-top: 360px;
+	z-index: 1;
+	visibility: hidden;
+
+}
+
+.pop-28{
+	position: absolute;
+	margin-left: 660px;
+	margin-top: 410px;
+	z-index: 1;
+	visibility: hidden;
+
+}
+
+.pop-29{
+	position: absolute;
+	margin-left: 800px;
+	margin-top: 410px;
+	z-index: 1;
+	visibility:hidden ;
+
+}
+
+.pop-210{
+	position: absolute;
+	margin-left: 820px;
+	margin-top: 450px;
+	z-index: 1;
+	visibility: hidden;
+
+}
+
+.pop-211{
+	position: absolute;
+	margin-left: 630px;
+	margin-top: 460px;
+	z-index: 1;
+	visibility: hidden;
+
+}
+
+
+.pop-3{
+	width:29%;
+	position: absolute;
+	z-index: 1;
+	margin-left: 100px;
+	margin-top: 200px;
+	visibility: hidden;
+}
+
+.pop-41{
+	width:20%;
+	position: absolute;
+	z-index: 1;
+	margin-left: 280px;
+	margin-top: 210px;
+	visibility: hidden;
+
+}
+
+.pop-42{
+	width:20%;
+	position: absolute;
+	z-index: 1;
+	margin-left: 800px;
+	margin-top: 400px;
+	visibility: hidden;
+
+}
+
+.pop-51{
+	width:15%;
+	position: absolute;
+	z-index: 1;
+	margin-left: 400px;
+	margin-top: 250px;
+	visibility: hidden;
+
+}
+
+.pop-52{
+	width:20%;
+	position: absolute;
+	z-index: 1;
+	margin-left: 300px;
+	margin-top: 200px;
+	visibility: hidden;
+
+}
+
+.pop-53{
+	width:20%;
+	position: absolute;
+	z-index: 1;
+	margin-left: 800px;
+	margin-top: 280px;
+	visibility: hidden;
+
+}
+
+.pop-54{
+	width:20%;
+	position: absolute;
+	z-index: 1;
+	margin-left: 300px;
+	margin-top: 490px;
+	visibility: hidden;
+
+}
+
+.pop-55{
+	width:20%;
+	position: absolute;
+	z-index: 1;
+	margin-left: 700px;
+	margin-top: 500px;
+	visibility: hidden;
+}
+
+.pop-61{
+	width:20%;
+	position: absolute;
+	z-index: 1;
+	margin-left: 100px;
+	margin-top: 300px;
+	visibility: hidden;
+}
+
+.pop-62{
+	width:20%;
+	position: absolute;
+	z-index: 1;
+	margin-left: 950px;
+	margin-top: 400px;
+	visibility: hidden;
+}
+
+.pop-63{
+	width:20%;
+	position: absolute;
+	z-index: 1;
+	margin-left: 900px;
+	margin-top: 200px;
+	visibility: hidden;
+}
+
+.pop-64{
+	width:20%;
+	position: absolute;
+	z-index: 1;
+	margin-left: 130px;
+	margin-top: 500px;
+	visibility: hidden;
+}
+
+.pop-65{
+	width:20%;
+	position: absolute;
+	z-index: 1;
+	margin-left: 700px;
+	margin-top: 600px;
+	visibility: hidden;
+}
+
+.pop-71{
+	width:30%;
+	position: absolute;
+	z-index: 1;
+	margin-left: 70px;
+	margin-top: 180px;
+	box-shadow: 5px 5px 5px #666;
+	background-color: white;
+	visibility: hidden;
+}
+
+.pop-72{
+	width:24%;
+	position: absolute;
+	z-index: 1;
+	margin-left: 900px;
+	margin-top: 300px;
+	box-shadow: 5px 5px 5px #666;
+	background-color: white;
+	visibility: hidden;
+}
+
+.pop-73{
+	width:25%;
+	position: absolute;
+	z-index: 2;
+	margin-left: 50px;
+	margin-top: 250px;
+	box-shadow: 5px 5px 5px #666;
+	background-color: white;
+	visibility: hidden;
+}
+
+.pop-74{
+	width:25%;
+	position: absolute;
+	z-index: 2;
+	margin-left: 800px;
+	margin-top: 130px;
+	box-shadow: 5px 5px 5px #666;
+	background-color: white;
+	visibility: hidden;
+}
+
+.pop-75{
+	width:30%;
+	position: absolute;
+	z-index: 3;
+	margin-left: 140px;
+	margin-top: 430px;
+	box-shadow: 5px 5px 5px #666;
+	background-color: white;
+	visibility: hidden;
+}
+
+.pop-76{
+	width:30%;
+	position: absolute;
+	z-index: 4;
+	margin-left: 800px;
+	margin-top: 480px;
+	box-shadow: 5px 5px 5px #666;
+	background-color: white;
+	visibility: hidden;
+}
+
+.p-show{
+	visibility:visible;
+}
+
+.pnav-link{
+	font-family: arial;
+	font-size:60px;
+	position: fixed;
+	z-index: 4;
+	padding:20px;
+	width:100%;
+	bottom:0px;
+	display:inline-block;
+	text-align: center;
+	cursor:pointer;
+}
+
+.pnav-popup{
+	align-items:center;
+	justify-content:center;
+	position: relative;
+	z-index: 2;
+	height:100vh;
+	width:100vw;
+	position:fixed;
+	top:0px;
+	left:0px;
+	display:none;
+	align-items:center;
+	justify-content:center;
+}
+
+
+.pnav-popup.show{
+	display:flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
