@@ -287,6 +287,11 @@ a:hover {
 	position: absolute;
   	height:40vh;
   	transform-style: preserve-3d;
+  	font-size: 2vw;
+}
+
+.lenny-face {
+	font-size: 4vw;
 }
 
 .cube {
