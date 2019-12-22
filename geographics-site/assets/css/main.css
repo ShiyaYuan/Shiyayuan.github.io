@@ -126,7 +126,7 @@ a {
 	z-index: -3;
 }
 
-.my-flags img {
+.my-flags iframe {
 	width: 100%;
 	height: 100%;
 }
