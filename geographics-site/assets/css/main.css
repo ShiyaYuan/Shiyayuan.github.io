@@ -42,11 +42,13 @@ a {
 
 
 .for {
+	width: 30vw;
 	margin-left: 40vw;
 }
 
 .geoflags {
 	margin-left:20vw;
+	width: 60vw;
 }
 
 .geoflags a:hover {
