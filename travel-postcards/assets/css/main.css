@@ -1,6 +1,7 @@
 body {
-	font-family: Arial,Helvetica,sans-serif;
-	font-size: 4vw;
+	font-family: cursive, Arial,Helvetica,sans-serif;
+	font-size: 4.5vw;
+
 }
 
 a {
@@ -40,15 +41,6 @@ a {
 	bottom:0;
 }
 
-.message-box {
-	position: absolute;
-	padding: 8vw;
-	height: 100vh;
-	margin-top: 120vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
 
 
 
