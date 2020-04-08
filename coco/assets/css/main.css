@@ -290,6 +290,10 @@ a:hover {
   	font-size: 2vw;
 }
 
+.coco-thumbnail img {
+	width: 50%;
+}
+
 .lenny-face {
 	font-size: 4vw;
 }

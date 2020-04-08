@@ -61,6 +61,11 @@ $( document ).ready(function() {
     $('.project-9-thumbnail').removeClass('hide');
   });
 
+  $('.project-10').mouseenter(function(){
+    hideAll();
+    $('.project-10-thumbnail').removeClass('hide');
+  });
+
 
 // click link and pause animation
 
@@ -106,6 +111,10 @@ $('.project-1').click(function() {
   $('#page9').addClass('hide');
 });
 
+$('.project-1').click(function() {
+  $('#page10').addClass('hide');
+});
+
 
 
 
@@ -144,6 +153,11 @@ $('.project-2').click(function() {
 $('.project-2').click(function() {
   $('#page9').addClass('hide');
 });
+
+$('.project-2').click(function() {
+  $('#page10').addClass('hide');
+});
+
 
 
 
@@ -184,6 +198,11 @@ $('.project-3').click(function() {
   $('#page9').addClass('hide');
 });
 
+$('.project-3').click(function() {
+  $('#page10').addClass('hide');
+});
+
+
 
 
 
@@ -222,6 +241,11 @@ $('.project-4').click(function() {
 $('.project-4').click(function() {
   $('#page9').addClass('hide');
 });
+
+$('.project-4').click(function() {
+  $('#page10').addClass('hide');
+});
+
 
 
 
@@ -262,6 +286,11 @@ $('.project-5').click(function() {
   $('#page9').addClass('hide');
 });
 
+$('.project-5').click(function() {
+  $('#page10').addClass('hide');
+});
+
+
 
 
 
@@ -300,6 +329,11 @@ $('.project-6').click(function() {
 $('.project-6').click(function() {
   $('#page9').addClass('hide');
 });
+
+$('.project-6').click(function() {
+  $('#page10').addClass('hide');
+});
+
 
 
 
@@ -340,6 +374,11 @@ $('.project-7').click(function() {
   $('#page9').addClass('hide');
 });
 
+$('.project-7').click(function() {
+  $('#page10').addClass('hide');
+});
+
+
 
 
 
@@ -379,6 +418,11 @@ $('.project-8').click(function() {
   $('#page9').addClass('hide');
 });
 
+$('.project-8').click(function() {
+  $('#page10').addClass('hide');
+});
+
+
 
 
 
@@ -417,6 +461,57 @@ $('.project-9').click(function() {
 $('.project-9').click(function() {
   $('#page8').addClass('hide');
 });
+
+$('.project-9').click(function() {
+  $('#page10').addClass('hide');
+});
+
+
+
+
+
+
+$('.project-10').click(function() {
+  $('#page10').removeClass('hide');
+});
+
+$('.project-10').click(function() {
+  $('#page1').addClass('hide');
+});
+
+$('.project-10').click(function() {
+  $('#page2').addClass('hide');
+});
+
+$('.project-10').click(function() {
+  $('#page3').addClass('hide');
+});
+
+$('.project-10').click(function() {
+  $('#page4').addClass('hide');
+});
+
+$('.project-10').click(function() {
+  $('#page5').addClass('hide');
+});
+
+$('.project-10').click(function() {
+  $('#page6').addClass('hide');
+});
+
+$('.project-10').click(function() {
+  $('#page7').addClass('hide');
+});
+
+$('.project-10').click(function() {
+  $('#page8').addClass('hide');
+});
+
+$('.project-10').click(function() {
+  $('#page9').addClass('hide');
+});
+
+
 
 // individual page's NAV
 
