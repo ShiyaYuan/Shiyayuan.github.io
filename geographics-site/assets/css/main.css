@@ -8,6 +8,15 @@ a {
 	text-decoration: none;
 }
 
+ul {
+
+}
+
+li {
+	list-style: none;
+	/* transform: skew(15deg, 15deg); */
+}
+
 .bg {
 	background-size: cover;
 	object-fit: cover;
@@ -15,16 +24,17 @@ a {
 	height: 100vh;
 	position: fixed;
 	mix-blend-mode: multiply;
+	/* transform: skew(15deg, 15deg); */
 }
 
 .bg img {
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
 }
 
 .title {
 	width: 100vw;
-	padding-left: 1.5vw; 
+	padding-left: 1.5vw;
 	padding-right: 1.5vw;
 	padding-top: 1.5vw;
 	color: white;
@@ -58,7 +68,7 @@ a {
 
 .about {
 	width: 100vw;
-	padding-left: 1.5vw; 
+	padding-left: 1.5vw;
 	padding-right: 1.5vw;
 	padding-top: 1.5vw;
 	font-family: times;
@@ -69,7 +79,7 @@ a {
 }
 
 .layer-names {
-	padding-left: 1.5vw; 
+	padding-left: 1.5vw;
 	padding-right: 1.5vw;
 	color: white;
 	mix-blend-mode: difference;
@@ -144,15 +154,10 @@ a {
 
 
 /* FONT */
-@font-face{ 
+@font-face{
 	font-family: 'glacier';
 	src: url('WebFont.eot?#iefix') format('embedded-opentype'),
 	     url('../fonts/glyphworld-glacier-webfont.woff') format('woff'),
 	     url('WebFont.ttf') format('truetype'),
 	     url('WebFont.svg#webfont') format('svg');
 }
-
-
-
-
-
