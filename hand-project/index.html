@@ -1,0 +1,201 @@
+<!--
+
+   ____   U  ___ u   ____   U  ___ u
+U /"___|   \/"_ \/U /"___|   \/"_ \/
+\| | u     | | | |\| | u     | | | |
+ | |/__.-,_| |_| | | |/__.-,_| |_| |
+  \____|\_)-\___/   \____|\_)-\___/
+ _// \\      \\    _// \\      \\
+(__)(__)    (__)  (__)(__)    (__)
+
+ -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>On the internet I place my hand on yours</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		    <meta charset="UTF-8" />
+        <meta name="description" content="On the internet I place my hand on yours">
+        <meta name="author" content="Coco Yuan">
+        <link href="css/Style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://use.typekit.net/hur0wxr.css">
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/html2canvas.min.js"></script>
+    </head>
+
+    <body>
+      <!-- GUI -->
+      <div id="gui-pos" class="hide" data-html2canvas-ignore="true">
+        <span id="gui-drag">Hand Control 🖐</span>
+      </div>
+
+      <div id="scene-container">
+        <!-- MOBILE MESSAGE -->
+        <div class="message-wrapper">
+          <span id="message">Please visit again on desktop for full experience!</span>
+        </div>
+
+        <!-- VIDEO TRIGEGR HIDDEN -->
+        <div id="vid-trigger"></div>
+
+        <!-- TIPS -->
+        <div class="tips-wrapper" data-html2canvas-ignore="true">
+          <span id="other-tips"></span>
+          <span id="start-tip">**Use left and right arrow key to navigate menu**</span>
+        </div>
+
+        <!-- PAGE -->
+      <div class="page-wrapper">
+        <div id="about-page" class="page hide">
+
+          <div class="page-content">
+            <div class="page-title"><span>On the internet I place my hand on yours</span></div>
+            <div class="page-text">
+              <span>
+                is an ongoing collection of user-generated images in which my virtual hand is placed on top of their hands. These images are created using this website's Edit Mode.
+              </span>
+              <br>
+              <br>
+              <span>
+                This project started from physically touching strangers in real life when I came to learn about the lack of well-planned public space in Melbourne city.
+              </span>
+              <br>
+              <br>
+              <span>
+                I became interested in people’s behaviour to naturally claim the streets, corners and car parks as their social space.
+              </span>
+              <br>
+              <br>
+              <span>
+                I started to approach strangers in these places and “joined” them in whatever they were doing. By subtly touching their hands with my hand I was able to share the same intimate private space they have occupied amongst the busy streets.
+              </span>
+              <br>
+              <br>
+              <span>
+                However, as this project was held on pause due to the global pandemic, I began to think about our space on the internet. I wanted to make use of the internet as a public space for contactless intimacy.
+              </span>
+              <br>
+              <br>
+              <span>
+                Here, I invite people to upload images of their hands performing some sort of activity and then using the Edit Mode to place my hand on top of theirs— allowing my intimate invasion into their private space.
+              </span>
+
+            </div>
+          </div>
+        </div>
+
+
+        <!-- GALLERY PAGE -->
+        <div id="gallery-page" class="page hide">
+
+          <div class="gallery-content">
+            <div id="x" class="img-wrapper">
+              <span class="gallery-title">Gallery</span>
+              <img src="images/1.png">
+              <img src="images/2.png">
+              <img src="images/3.png">
+              <img src="images/4.png">
+              <img src="images/5.png">
+              <img src="images/6.png">
+              <img src="images/7.png">
+              <img src="images/1.png">
+              <img src="images/1.png">
+              <img src="images/1.png">
+              <img src="images/1.png">
+              <img src="images/1.png">
+              <img src="images/1.png">
+              <img src="images/1.png">
+              <img src="images/1.png">
+              <img src="images/1.png">
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- MENU -->
+      <div class="menu-wrapper " data-html2canvas-ignore="true">
+        <div class="menu">
+          <div class="carousel" id="carousel">
+            <!-- cell 1 -->
+            <div class="carousel-cell cell1" id="carousel-cell">
+              <div class="cell-text-wrapper">
+                <div class="cell-text">
+
+                  <div id="about-btn" class="cell-title btn" >About</div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- cell 2 -->
+            <div class="carousel-cell cell2" id="carousel-cell">
+              <div class="cell-text-wrapper">
+                <div class="cell-text">
+
+                  <div id="gallery-btn" class="cell-title btn" >Gallery</div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- cell 3 -->
+            <div class="carousel-cell cell3" id="carousel-cell">
+              <div class="cell-text-wrapper">
+                <div class="cell-text">
+
+                  <div id="tips-btn" class="cell-title btn">TIPS</div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- cell 4 -->
+            <div class="carousel-cell cell4" id="carousel-cell">
+              <div class="cell-text-wrapper">
+                <div class="cell-text">
+                  <!-- EDIT MODE -->
+                  <span id="edit-btn" class="cell-title btn">Edit Mode</span>
+                  <!-- EXIT EDIT MODE -->
+                  <span id="exit-edit-btn" class="cell-title btn gone">Exit Edit Mode</span>
+
+                  <div id="edit-text" class="gone">
+                    <!-- <span class="project-title">On the internet I place my hand on yours</span> -->
+                    <!-- <br> -->
+                    <br>
+                    <span class="text-bg">1. Take a picture of your hand performing an activity</span>
+                    <br>
+
+                    <div class="upload-btn-wrapper">
+                      <span class="text-bg">2. <label id="upload-btn" class="btn" for="file">Upload your image here!</label></span>
+                      <input id='file' type='file' accept='image/*'/>
+                    </div>
+
+                    <span class="text-bg">3. Use <span id="hand-control-btn" class="btn">Hand Controls</span> to place my hand on top of yours!</span>
+                    <br>
+
+                    <span class="text-bg">4. <span id="btn-save" class="btn" > Save it </span></span>
+                    <br>
+                    <span class="text-bg">5. <span id="btn-submit" class="btn" ><a href="mailto:cocoyuanayi@gmail.com?subject=Your%20hand%20on%20mine&body=By%20sharing%20these%20images%20I%20agree%20that%20it%20may%20be%20published%20online:"> Please share with me! </a></span></span>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="frame"></div>
+      <div id="bg">
+        <video class="bg-vid" src="videos/manual-gallery.mp4" type="video/mp4" muted autoplay loop></video>
+      </div>
+
+
+      <!-- JS SCRIPT -->
+  	  <script type="module" src="js/app.js"></script>
+    </body>
+</html>
