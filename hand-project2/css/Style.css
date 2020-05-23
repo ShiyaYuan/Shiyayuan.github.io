@@ -54,13 +54,14 @@ a{
 }
 
 #mobile-btns-wrapper{
+  visibility: hidden;
   position: absolute;
   width: 100vw;
   height:100vh;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
-  bottom: 5rem;
+  align-items: flex-start;
+  top: 15rem;
 }
 
 #mobile-btns{
@@ -672,7 +673,6 @@ span {
     width: 100vw;
     height: 100vh;
     padding: 2.5rem;
-
   }
 
   .page-text{
@@ -682,6 +682,10 @@ span {
   .img-wrapper{
     width: 70%;
     top:6%;
+  }
+
+  #mobile-btns-wrapper{
+    /* visibility: visible; */
   }
 
 
