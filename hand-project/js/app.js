@@ -215,17 +215,23 @@ function loadModel(){
   }
 };
 
+    //hand position preset
+    gui.add(options, 'relaxed').name('👉Relax Hand');
+    gui.add(options, 'reset').name('👉Reset Hand Posture');
 
     //move hand position x y
-    var folder = gui.addFolder("Adjust Hand Position");
-    folder.add(model.position, 'x', -25, 20).name('left / right');
-    folder.add(model.position, 'y', -25, 20 ).name('down / up');
+    var folder1 = gui.addFolder("Adjust Hand Position");
+    folder1.add(model.position, 'x', -25, 20).name('left / right');
+    folder1.add(model.position, 'y', -25, 20 ).name('down / up');
     // folder.add(model.rotation, 'x', -5, 5 ).name('rotate hand');
-    folder.add(model.rotation, 'y', -1, 1 ).name('rotate1');
-    folder.add(model.rotation, 'z', -1, 1 ).name('rotate2');
+    folder1.add(model.rotation, 'y', -1, 1 ).name('rotate1');
+    folder1.add(model.rotation, 'z', -1, 1 ).name('rotate2');
+
+    //exapnd folder
+    folder1.open();
 
     //adjust fingers and wrist
-    var folder = gui.addFolder("Adjust Fingers and Wrist");
+    var folder = gui.addFolder("Adjust Fingers");
     //thumb folder
     var thumbFolder = folder.addFolder("Thumb");
     thumbFolder.add(thumbJoint1.rotation, 'x', -0.5, 0.5).name("rotate");
@@ -235,48 +241,46 @@ function loadModel(){
     thumbFolder.add(thumbJoint3.rotation, 'y', -0.5, 0).name( "fingertip" );
     //point folder
     var pointFolder = folder.addFolder("Point Finger");
-    pointFolder.add(pointJoint1.rotation, 'x', -0.5, 0.5).name( "rotate x" );
-    pointFolder.add(pointJoint1.rotation, 'y', 0, 0.5).name( "rotate y" );
+    // pointFolder.add(pointJoint1.rotation, 'x', -0.5, 0.5).name( "rotate x" );
+    // pointFolder.add(pointJoint1.rotation, 'y', 0, 0.5).name( "rotate y" );
     pointFolder.add(pointJoint1.rotation, 'z', -0.5, 0.5).name( "lower / lift" );
 
     pointFolder.add(pointJoint2.rotation, 'z', -0.5, 0).name( "knuckle" );
     pointFolder.add(pointJoint3.rotation, 'z', -0.5, 0).name( "fingertip" );
     //middle folder
     var middleFolder = folder.addFolder("Middle Finger");
-    middleFolder.add(middleJoint1.rotation, 'x', -0.5, 0.5).name( "rotate x" );
-    middleFolder.add(middleJoint1.rotation, 'y', 0, 0.5).name( "rotate y" );
+    // middleFolder.add(middleJoint1.rotation, 'x', -0.5, 0.5).name( "rotate x" );
+    // middleFolder.add(middleJoint1.rotation, 'y', 0, 0.5).name( "rotate y" );
     middleFolder.add(middleJoint1.rotation, 'z', -0.5, 0.5).name( "lower / lift" );
 
     middleFolder.add(middleJoint2.rotation, 'z', -0.5, 0.2).name( "knuckle" );
     middleFolder.add(middleJoint3.rotation, 'z', -0.5, 0.2).name( "fingertip" );
     //ring folder
     var ringFolder = folder.addFolder("Ring Finger");
-    ringFolder.add(ringJoint1.rotation, 'x', -0.5, 0.5).name( "rotate x" );
-    ringFolder.add(ringJoint1.rotation, 'y', 0, 0.5).name( "rotate y" );
+    // ringFolder.add(ringJoint1.rotation, 'x', -0.5, 0.5).name( "rotate x" );
+    // ringFolder.add(ringJoint1.rotation, 'y', 0, 0.5).name( "rotate y" );
     ringFolder.add(ringJoint1.rotation, 'z', -0.5, 0.5).name( "lower / lift" );
 
     ringFolder.add(ringJoint2.rotation, 'z', -0.5, 0).name( "knuckle" );
     ringFolder.add(ringJoint3.rotation, 'z', -0.5, 0).name( "fingertip" );
     //pinky folder
     var pinkyFolder = folder.addFolder("Pinky");
-    pinkyFolder.add(pinkyJoint1.rotation, 'x', -0.5, 0.5).name( "rotate x" );
-    pinkyFolder.add(pinkyJoint1.rotation, 'y', -0.3, 0.5).name( "rotate y" );
+    // pinkyFolder.add(pinkyJoint1.rotation, 'x', -0.5, 0.5).name( "rotate x" );
+    // pinkyFolder.add(pinkyJoint1.rotation, 'y', -0.3, 0.5).name( "rotate y" );
     pinkyFolder.add(pinkyJoint1.rotation, 'z', -0.5, 0.5).name( "lower / lift" );
 
     pinkyFolder.add(pinkyJoint2.rotation, 'z', -0.5, 0).name( "knuckle" );
     pinkyFolder.add(pinkyJoint3.rotation, 'z', -0.5, 0).name( "fingertip" );
     //wrist folder
-    var wristFolder = folder.addFolder("Wrist");
-    wristFolder.add(wristJoint.rotation, 'x', 0, 1).name("rotate wrist");
+    // var wristFolder = folder.addFolder("Wrist");
+    // wristFolder.add(wristJoint.rotation, 'x', 0, 1).name("rotate wrist");
 
     //lighting
     var folder = gui.addFolder("Adjust Lighting");
     folder.addColor(new ColorGUIHelper(ambientLight, 'color'), 'value').name('light color');
     folder.add(ambientLight, 'intensity', 5, 20, 0.01).name('brightness');
 
-    //hand position preset
-    gui.add(options, 'relaxed').name('👉Relax Hand');
-    gui.add(options, 'reset').name('👉Reset Hand Posture');
+
 
 
     // gui.close();
@@ -355,10 +359,13 @@ $( '#vid-trigger' ).hover(function() {
 
 //ABOUT PAGE
 $('#about-btn').click(function(){
+    $('#tips-unknown').addClass('hide'),
+    $('#tips-btn').removeClass('hide'),
     // $('.menu').addClass('hide'),
     // $('#gui-pos').addClass('hide'),
     $('.tips-wrapper').addClass('hide'),
     $('#about-page').removeClass('hide'),
+    $('.page-wrapper').removeClass('hide'),
     orbit.enableZoom = false
     // $(renderer.domElement).addClass('blur'),
     // $('#bg').addClass('blur'),
@@ -366,65 +373,130 @@ $('#about-btn').click(function(){
     ;
   });
 
+  //CLICK TIPS, UNFOLD GALLERY
+  $('#tips-btn').click(function(){
+    $('#gallery-unknown').addClass('hide'),
+    $('#gallery-btn').removeClass('hide');
+  });
+
 $('.page').click(function(){
     $(renderer.domElement).removeClass('blur'),
     orbit.enableZoom = true,
     $('.menu').removeClass('hide'),
     // $('#gui-pos').removeClass('hide'),
+
+    $('.bg-vid').removeClass('hide'),
+    scene.add(model),
+
     $('.tips-wrapper').removeClass('hide'),
     $('.frame').removeClass('blur'),
     $('#bg').removeClass('blur'),
-    $('.page').addClass('hide'),
-    $('.img-wrapper').removeClass('gallery-slideshow');
+    $('.page').addClass('hide');
   });
 
 //GALLERY PAGE
 $('#gallery-btn').click(function(){
+    $('#edit-unknown').addClass('hide'),
+    $('#edit-btn').removeClass('hide'),
     $('.menu').addClass('hide'),
-    // $('#gui-pos').addClass('hide'),
+
+    $('.bg-vid').addClass('hide'),
+    scene.remove(model),
+
     $('.tips-wrapper').addClass('hide'),
     $('#gallery-page').removeClass('hide'),
-    orbit.enableZoom = false
-    // $(renderer.domElement).addClass('blur'),
-    // $('#bg').addClass('blur'),
-    // $('.frame').addClass('blur'),
-    // $('.img-wrapper').addClass('gallery-slideshow')
-    ;
+    orbit.enableZoom = false;
   });
 
-  //HAND CONTROL WINDOW
+  // HAND CONTROL WINDOW
   $('#hand-control-btn').click(function(){
-      $('#gui-pos').removeClass('hide');
+      $('#gui-pos').fadeIn(100);
     });
 
   //EDIT MODE
   $('#edit-btn').click(function(){
       $('#frame').removeClass('hide'),
+      $('#edit-mode-bg').removeClass('hide'),
       $('#edit-btn').addClass('gone'),
-      $('#exit-edit-btn').removeClass('gone'),
-      $('#edit-text').removeClass('gone'),
-      $('#exit-edit-btn').removeClass('gone'),
+      $('.entering-text').removeClass('gone'),
       scene.remove( plane ),
-      orbit.enableRotate = false,
-      // orbit.autoRotate = false,
-      camera.position.set( -5,0,25),
-      $('.bg-vid').addClass('gone');
 
+      $('.cell1').addClass('hide'),
+      $('.cell2').addClass('hide'),
+      $('.cell3').addClass('hide'),
+      $('.bg-vid').addClass('gone');
 
     });
 
-  //EDIT MODE
-  $('#exit-edit-btn').click(function(){
-      $('#frame').addClass('hide'),
-      $('#gui-pos').addClass('hide'),
-      $('#edit-btn').removeClass('gone'),
-      $('#edit-text').addClass('gone'),
-      $('#exit-edit-btn').addClass('gone'),
+    // CLICK TO EDIT MODE
+    $('#enter-enter').click(function(){
+      setTimeout(fadeAway,1000);
+
+      // $('#gui-pos').delay(1000).fadeIn(100),
+      $('#edit-text').delay(1000).fadeIn(100),
+      $('#enter-enter').delay(1000).fadeOut(100),
+      $('#exit-edit-btn').delay(1000).fadeIn(100),
+      $('.fade-page').fadeIn(1000),
+      $(".fade-page").fadeOut(800);
+    });
+
+    function fadeAway(){
+      orbit.enableRotate = false,
+      camera.position.set( -5,0,25);
+    }
+
+    //2nd EDIT MODE
+    $('#edit-btn2').click(function(){
+      setTimeout(enterFadeAway,1000);
+
+      $('#gui-pos').delay(1200).fadeIn(100),
+      $('#edit-text').delay(800).fadeIn(100),
+      $('#exit-edit-btn').delay(1000).fadeIn(100),
+      $('#edit-btn2').delay(1000).fadeOut(100),
+      $('.fade-page').fadeIn(1000),
+      $(".fade-page").fadeOut(800);
+
+    });
+
+  function enterFadeAway(){
+    $('.cell1').addClass('hide'),
+    $('.cell2').addClass('hide'),
+    $('.cell3').addClass('hide'),
+    $('.bg-vid').addClass('gone'),
+    orbit.enableRotate = false,
+    camera.position.set( -5,0,25),
+    scene.remove( plane ),
+    $('#frame').removeClass('hide'),
+    $('#edit-mode-bg').removeClass('hide');
+  }
+
+
+    //CLICK TO EXIT EDIT MODE
+    $('#exit-edit-btn').click(function(){
+      setTimeout(exitFadeAway,1000);
+
+      $('#gui-pos').delay(500).fadeOut(100),
+      $('#edit-text').delay(500).fadeOut(100),
+      $('#exit-edit-btn').delay(1000).fadeOut(100),
+      $('#edit-btn2').delay(1000).fadeIn(100),
+      $('.fade-page').fadeIn(1000),
+      $(".fade-page").fadeOut(800);
+    });
+
+    function exitFadeAway(){
+      $('.cell1').removeClass('hide'),
+      $('.cell2').removeClass('hide'),
+      $('.cell3').removeClass('hide'),
+      $('.bg-vid').removeClass('gone'),
       scene.add( plane ),
       orbit.enableRotate = true,
-      // orbit.autoRotate = true,
-      $('.bg-vid').removeClass('gone');
+      $('#frame').addClass('hide'),
+      $('#edit-mode-bg').addClass('hide');
+    }
 
+    //MOUSE OVER TO REMOVE DRAG HINT
+    $('#gui-drag').mousemove(function(){
+      $('#drag-here').fadeOut(100);
     });
 
 });
@@ -495,6 +567,11 @@ document.addEventListener('keydown', onKeyDown, false);
 // DRAG GUI
 var ball = document.querySelector("#gui-pos");
 var ballDrag = document.querySelector("#gui-drag");
+
+ball.ondragstart = function() {
+  return false;
+};
+
 ballDrag.onmousedown = function(event) {
 
   let shiftX = event.clientX - ball.getBoundingClientRect().left;
@@ -527,19 +604,16 @@ ballDrag.onmousedown = function(event) {
   };
 
 };
+// ball.ondragstart = function() {
+//   return false;
+// };
 
-ball.ondragstart = function() {
-  return false;
-};
-
-// GENERATE RANDOM TIPS
+// PUSH TIPS
 var tips = [
   "[SPACE] to switch left / right hands",
-  "Try Edit Mode!",
-  "Play with Hand Control so my hand will look nice on yours",
-  "Place my hand on yours!",
-  "You can move the Hand Control!",
-  "Check out gallery!"
+  "Check out Gallery before you try Edit Mode!",
+  "Play with Hand Control in Edit Mode",
+  "Place my hand on yours!"
 ], t = 0;
 
 function pushTips(){
@@ -562,5 +636,132 @@ var textBox = document.getElementById("other-tips");
 var tipsBtn = document.getElementById("tips-btn");
 
 document.getElementById("tips-btn").addEventListener('click', pushTips, false);
+
+
+// ENTERING EDIT MODE PUSH TEXT
+var t1 = 0;
+var txt1 = 'You are entering an intimate space...';
+var speed = 70;
+
+function enter1() {
+  if (t1 < txt1.length) {
+    document.getElementById("entering-text1").innerHTML += txt1.charAt(t1);
+    t1++;
+    setTimeout(enter1, speed);
+  }
+
+}
+
+document.getElementById("edit-btn").addEventListener('click', enter1, false);
+
+//2nd
+var t2 = 0;
+var txt2 = 'In Edit Mode, you can use Hand Controls to manipulate hand';
+var speed = 70;
+
+function enter2() {
+  $('#entering-text1').addClass('gone');
+  $('#enter-nxt1').addClass('gone');
+  $('#enter-nxt2').removeClass('gone');
+
+  if (t2 < txt2.length) {
+    document.getElementById("entering-text2").innerHTML += txt2.charAt(t2);
+    t2++;
+    setTimeout(enter2, speed);
+  }
+
+}
+
+document.getElementById("enter-nxt1").addEventListener('click', enter2, false);
+
+// You can also drag the Hand Control around
+var t3 = 0;
+var txt3 = 'You can also drag the Hand Control around';
+var speed = 70;
+
+function enter3() {
+  $('#entering-text2').addClass('gone');
+  $('#enter-nxt2').addClass('gone');
+  $('#enter-nxt3').removeClass('gone');
+
+  if (t3 < txt3.length) {
+    document.getElementById("entering-text3").innerHTML += txt3.charAt(t3);
+    t3++;
+    setTimeout(enter3, speed);
+  }
+
+}
+
+document.getElementById("enter-nxt2").addEventListener('click', enter3, false);
+
+//Place my hand on yours
+var t4 = 0;
+var txt4 = 'Place my hand on yours...';
+var speed = 70;
+
+function enter4() {
+  $('#entering-text3').addClass('gone');
+  $('#enter-nxt3').addClass('gone');
+  $('#enter-nxt4').removeClass('gone');
+
+  if (t4 < txt4.length) {
+    document.getElementById("entering-text4").innerHTML += txt4.charAt(t4);
+    t4++;
+    setTimeout(enter4, speed);
+  }
+
+}
+
+document.getElementById("enter-nxt3").addEventListener('click', enter4, false);
+
+//last
+$('#enter-nxt4').click(function(){
+  $('#entering-text4').addClass('gone'),
+  $('#enter-nxt4').addClass('gone'),
+  $('#enter-enter').fadeIn(1000);
+});
+
+// TYPING START UP PAGE
+var i = 0;
+var startText = 'On the internet I place my hand on yours';
+var speed = 75;
+
+function startTitle() {
+  if (i < startText.length) {
+    document.getElementById("start-title").innerHTML += startText.charAt(i);
+    i++;
+    setTimeout(startTitle, speed);
+  }
+  $("#start-title").delay(4500).fadeOut(1500);
+  // $("#start-description").delay(6200).fadeIn(1500);
+  // $("#start-description").fadeOut(1500);
+
+  setTimeout(startTip,6500);
+}
+
+var i3 = 0;
+var navTip = '**Use left and right arrow key to navigate menu';
+
+function startTip() {
+
+  if (i3 < navTip.length) {
+    document.getElementById("nav-tip").innerHTML += navTip.charAt(i3);
+    i3++;
+    setTimeout(startTip, 3000);
+  }
+  $("#start-btn").delay(5000).fadeIn(1000);
+
+}
+
+window.onload = function(){startTitle()};
+
+// CLICK TO START EXPERIENCE
+$('#start-btn').click(function(){
+  $('.banner').delay(1000).fadeOut(100),
+  $('.fade-page').fadeIn(1000),
+  $(".fade-page").fadeOut(800);
+});
+
+
 
 ///////////////////////////////////////////
