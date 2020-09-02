@@ -1,7 +1,6 @@
 body {
 	font-family: arial;
-	/*background-color: green;*/
-	background-color: white;
+	background-color: gray;
 }
 
 
@@ -12,6 +11,21 @@ a {
 
 a:hover {
 	color: blue;
+}
+
+.background {
+	pointer-events: none;
+	/* border:2px solid red; */
+	/* width: 100vw;
+	height:100vh;
+	position: absolute; */
+}
+
+.giphy-embed {
+	/* position: absolute;
+	top:200px;
+	right:200px; */
+	/* border:2px solid red; */
 }
 
 .list-item {
@@ -42,10 +56,10 @@ a:hover{
 /* start MASTER */
 
 .grid {
-	background-color: white;
+	/* background-color: white; */
 	width: 100vw;
 	height:100vh;
-	position: absolute;
+	position: fixed;
 	display: flex;
 	flex-wrap: wrap;
 	font-size: 1.5vw;
@@ -158,7 +172,7 @@ a:hover{
 	/*border:2px solid red;*/
 
 	position: fixed;
-	background-color: white;
+	/* background-color: white; */
 	width: 90vw;
 	height: 100vh;
 
@@ -255,6 +269,7 @@ a:hover{
 .thumbnail-container {
 	z-index: 9;
 	pointer-events: none;
+	position: absolute;
 
 	width:100vw;
 	height:100vh;
@@ -262,15 +277,15 @@ a:hover{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/*border:2px solid red;*/
+	/* border:2px solid red; */
 }
 
 .project-thumbnail {
 	z-index: 9;
 	text-align: center;
 	position: absolute;
-	width:30vw;
-  	height:40vh;
+	width:500px;
+  	height:300px;
   	transform-style: preserve-3d;
 
 }
@@ -281,7 +296,7 @@ a:hover{
 
 .coco-thumbnail {
 	width: 20vw;
-	z-index: 9;
+	z-index: -1;
 	text-align: center;
 	position: absolute;
   	height:40vh;
@@ -299,13 +314,14 @@ a:hover{
 
 .cube {
 	pointer-events: none;
+	top:-100px;
 
 	position: relative;
    	transform-style: preserve-3d;
    	transform: rotateX(-24deg) rotateY(-40deg) rotateZ(0deg);
 
    	animation-name: spin;
-   	animation-duration: 9s;
+   	animation-duration: 18s;
    	animation-iteration-count: infinite;
    	animation-timing-function: linear;
    	animation-direction: normal;
@@ -346,16 +362,16 @@ a:hover{
 
   	text-align: center;
 	position: relative;
-	width:30vw;
-  	height:30vh;
+	width:500px;
+		height:300px;
   	transform-style: preserve-3d;
 
   }
 
 .box-border {
-	/*border:1px solid black;*/
-	width:30vw;
-  	height:30vh;
+	/* border:1px solid black; */
+	width:500px;
+  	height:300px;
   	transform-style: preserve-3d;
 }
 
@@ -379,46 +395,4 @@ a:hover{
 
 .underline {
 	text-decoration: underline;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* JS interactive */
-
-.hide {
-	visibility: hidden;
-}
-
-.show {
-	visibility: show;
-}
-
-.pause {
-	-webkit-animation-play-state:paused;
-  	-moz-animation-play-state:paused;
-  	-o-animation-play-state:paused;
-  	animation-play-state:paused;
-}
-
-
-
-/* FONT */
-@font-face{
-	font-family: 'hn-futura';
-	src: url('WebFont.eot');
-	src: url('WebFont.eot?#iefix') format('embedded-opentype'),
-	     url('../fonts/hershey-noailles-futural-1-1-WebFont.woff') format('woff'),
-	     url('WebFont.ttf') format('truetype'),
-	     url('WebFont.svg#webfont') format('svg');
 }
