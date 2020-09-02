@@ -2,11 +2,8 @@ window.onbeforeunload = function () {
     window.scrollTo(0, 0);
 };
 
-window.onload = function() {
-  var audio = document.getElementById("audio");
-audio.src = URL.createObjectURL("/audio/clubbeat.mp3");
-audio.load();
-audio.play();
+window.onload = function () {
+    window.scrollTo(0, 0);
 };
 
 function init(){
