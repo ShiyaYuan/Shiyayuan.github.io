@@ -1,10 +1,11 @@
 window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
+     window.scrollTo($('#homepage'), 0);
 };
 
-window.onload = function () {
-    window.scrollTo(0, 0);
-};
+// window.onload = function () {
+//     window.scrollTo(0, 0);
+// };
 
 function init(){
   //creating 'blur' filter plugin
