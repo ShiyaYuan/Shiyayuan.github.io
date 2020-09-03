@@ -91,7 +91,7 @@ const myFunc = () => {
     scrollTrigger: {
       trigger:"#bg2-wrapper",
       scrub:true,
-      start:"+=100%",
+      start:"+=150%",
       end:"+=300%",
       markers:true
     }
@@ -111,7 +111,7 @@ const myFunc = () => {
     scrollTrigger: {
       trigger:"#bg3-wrapper",
       scrub:true,
-      start:"+=200%",
+      start:"+=300%",
       end:"+=300%",
       markers:true
     }
@@ -119,7 +119,7 @@ const myFunc = () => {
 
   timeline3_img
   .fromTo('#bg3-wrapper .img',{scale:0},{scale:1})
-  .to('#bg3-wrapper img', {scale:1})
+  .to('#bg3-wrapper .img', {scale:1})
 
   .to('#bg3-wrapper',{scaleY:0, transformOrigin:'top'},"same")
   .fromTo('#bg4',{scaleY:0, transformOrigin:'bottom'},{scaleY:1, transformOrigin:'bottom'},"same")
@@ -130,7 +130,7 @@ const myFunc = () => {
     scrollTrigger: {
       trigger:"#bg4-wrapper",
       scrub:true,
-      start:"+=300%",
+      start:"+=450%",
       end:"+=300%",
       markers:true
     }
@@ -138,7 +138,7 @@ const myFunc = () => {
 
   timeline4_img
   .fromTo('#bg4-wrapper .img',{scale:0},{scale:1})
-  .to('#bg4-wrapper img', {scale:1})
+  .to('#bg4-wrapper .img', {scale:1})
 
   .to('#bg4-wrapper',{scaleY:0, transformOrigin:'top'},"same")
   .fromTo('#bg5',{scaleY:0, transformOrigin:'bottom'},{scaleY:1, transformOrigin:'bottom'},"same")
@@ -149,7 +149,7 @@ const myFunc = () => {
     scrollTrigger: {
       trigger:"#bg5-wrapper",
       scrub:true,
-      start:"+=400%",
+      start:"+=600%",
       end:"+=350%",
       markers:true
     }
@@ -157,7 +157,7 @@ const myFunc = () => {
 
   timeline5_img
   .fromTo('#bg5-wrapper .img',{scale:0},{scale:1})
-  .to('#bg5-wrapper img', {scale:1})
+  .to('#bg5-wrapper .img', {scale:1})
 
 
 
