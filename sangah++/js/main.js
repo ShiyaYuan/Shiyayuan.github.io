@@ -78,6 +78,7 @@ const myFunc = () => {
 
   timeline1_img
   .fromTo(['#bg1-wrapper img','#name1'],{scale:0},{scale:1})
+  .to('#bg1-wrapper img', {scale:1})
   // .fromTo('#name1',{scale:0},{scale:1})
 
   .to('#bg1-wrapper',{scaleY:0, transformOrigin:'top'},"same")
@@ -98,6 +99,7 @@ const myFunc = () => {
 
   timeline2_img
   .fromTo(['#bg2-wrapper img','#name2'],{scale:0},{scale:1})
+  .to('#bg2-wrapper img', {scale:1})
 
   .to('#bg2-wrapper',{scaleY:0, transformOrigin:'top'},"same")
   .fromTo('#bg3',{scaleY:0, transformOrigin:'bottom'},{scaleY:1, transformOrigin:'bottom'},"same")
@@ -117,6 +119,7 @@ const myFunc = () => {
 
   timeline3_img
   .fromTo('#bg3-wrapper .img',{scale:0},{scale:1})
+  .to('#bg3-wrapper img', {scale:1})
 
   .to('#bg3-wrapper',{scaleY:0, transformOrigin:'top'},"same")
   .fromTo('#bg4',{scaleY:0, transformOrigin:'bottom'},{scaleY:1, transformOrigin:'bottom'},"same")
@@ -135,6 +138,7 @@ const myFunc = () => {
 
   timeline4_img
   .fromTo('#bg4-wrapper .img',{scale:0},{scale:1})
+  .to('#bg4-wrapper img', {scale:1})
 
   .to('#bg4-wrapper',{scaleY:0, transformOrigin:'top'},"same")
   .fromTo('#bg5',{scaleY:0, transformOrigin:'bottom'},{scaleY:1, transformOrigin:'bottom'},"same")
@@ -153,6 +157,7 @@ const myFunc = () => {
 
   timeline5_img
   .fromTo('#bg5-wrapper .img',{scale:0},{scale:1})
+  .to('#bg5-wrapper img', {scale:1})
 
 
 
