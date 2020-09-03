@@ -47,7 +47,7 @@ const myFunc = () => {
     console.log('complete');
 
   }
-  //pin homepage until img pops up and vanish --> bg2
+  //pin homepage until img pops up and vanish --> bg1
   const timeline = gsap.timeline({
     scrollTrigger: {
       trigger:"#homepage",
@@ -60,11 +60,29 @@ const myFunc = () => {
   });
 
   timeline
-  // .fromTo('#homepage .img',{scale:0},{scale:1})
-  // .to('#homepage .img',{scale:1.5, opacity:0})
   //pin homepage and squeeze
   .to('#homepage',{scaleY:0, transformOrigin:'top'},"same")
+  .fromTo('#bg1',{scaleY:0, transformOrigin:'bottom'},{scaleY:1, transformOrigin:'bottom'},"same")
+
+
+  // bg1 img
+  const timeline1_img = gsap.timeline({
+    scrollTrigger: {
+      trigger:"#bg1-wrapper",
+      scrub:true,
+      start:"top top",
+      end:"+=300%",
+      markers:true
+    }
+  });
+
+  timeline1_img
+  .fromTo(['#bg1-wrapper img','#name1'],{scale:0},{scale:1})
+  // .fromTo('#name1',{scale:0},{scale:1})
+
+  .to('#bg1-wrapper',{scaleY:0, transformOrigin:'top'},"same")
   .fromTo('#bg2',{scaleY:0, transformOrigin:'bottom'},{scaleY:1, transformOrigin:'bottom'},"same")
+  .to('#project1',{blur:10,duration:1},"same")
 
 
   // bg2 img
@@ -72,19 +90,18 @@ const myFunc = () => {
     scrollTrigger: {
       trigger:"#bg2-wrapper",
       scrub:true,
-      start:"top top",
-      end:"+=200%",
+      start:"+=100%",
+      end:"+=300%",
       markers:true
     }
   });
 
   timeline2_img
-  .fromTo(['#bg2-wrapper img','#name1'],{scale:0},{scale:1})
-  // .fromTo('#name1',{scale:0},{scale:1})
-  // .to('#bg2-wrapper .img',{scale:1.5, opacity:0})
+  .fromTo(['#bg2-wrapper img','#name2'],{scale:0},{scale:1})
 
   .to('#bg2-wrapper',{scaleY:0, transformOrigin:'top'},"same")
   .fromTo('#bg3',{scaleY:0, transformOrigin:'bottom'},{scaleY:1, transformOrigin:'bottom'},"same")
+  .to('#project2',{blur:10,duration:1},"same")
 
 
   // bg3 img
@@ -92,70 +109,50 @@ const myFunc = () => {
     scrollTrigger: {
       trigger:"#bg3-wrapper",
       scrub:true,
-      start:"+=100%",
-      end:"+=200%",
+      start:"+=200%",
+      end:"+=300%",
       markers:true
     }
   });
 
   timeline3_img
-  .fromTo(['#bg3-wrapper img','#name2'],{scale:0},{scale:1})
-  // .to('#bg3-wrapper .img',{scale:1.5, opacity:0})
+  .fromTo('#bg3-wrapper .img',{scale:0},{scale:1})
 
   .to('#bg3-wrapper',{scaleY:0, transformOrigin:'top'},"same")
   .fromTo('#bg4',{scaleY:0, transformOrigin:'bottom'},{scaleY:1, transformOrigin:'bottom'},"same")
-
+  .to('#project3',{blur:10,duration:1},"same")
 
   // bg4 img
   const timeline4_img = gsap.timeline({
     scrollTrigger: {
       trigger:"#bg4-wrapper",
       scrub:true,
-      start:"+=200%",
-      end:"+=200%",
+      start:"+=300%",
+      end:"+=300%",
       markers:true
     }
   });
 
   timeline4_img
   .fromTo('#bg4-wrapper .img',{scale:0},{scale:1})
-  // .to('#bg4-wrapper .img',{scale:1.5, opacity:0})
 
   .to('#bg4-wrapper',{scaleY:0, transformOrigin:'top'},"same")
   .fromTo('#bg5',{scaleY:0, transformOrigin:'bottom'},{scaleY:1, transformOrigin:'bottom'},"same")
+  .to('#project4',{blur:10,duration:1},"same")
 
   // bg5 img
   const timeline5_img = gsap.timeline({
     scrollTrigger: {
       trigger:"#bg5-wrapper",
       scrub:true,
-      start:"+=300%",
-      end:"+=200%",
+      start:"+=400%",
+      end:"+=350%",
       markers:true
     }
   });
 
   timeline5_img
   .fromTo('#bg5-wrapper .img',{scale:0},{scale:1})
-  // .to('#bg5-wrapper .img',{scale:1.5, opacity:0})
-
-  .to('#bg5-wrapper',{scaleY:0, transformOrigin:'top'},"same")
-  .fromTo('#bg6',{scaleY:0, transformOrigin:'bottom'},{scaleY:1, transformOrigin:'bottom'},"same")
-
-  // bg6 img
-  const timeline6_img = gsap.timeline({
-    scrollTrigger: {
-      trigger:"#bg6-wrapper",
-      scrub:true,
-      start:"+=400%",
-      end:"+=250%",
-      markers:true
-    }
-  });
-
-  timeline6_img
-  .fromTo('#bg6-wrapper .img',{scale:0},{scale:1})
-  // .to('#bg6-wrapper .img',{scale:1.5, opacity:0})
 
 
 
