@@ -45,7 +45,7 @@ function init(){
   })();
 
   //blur image on squeeze (on leave)
-  gsap.utils.toArray(".projects img").forEach(elem => {
+  gsap.utils.toArray(".projects").forEach(elem => {
     // if($(".project img").width < )
 
     const tl= gsap.timeline({
@@ -78,6 +78,21 @@ gsap.utils.toArray(".projects img").forEach(elem => {
   });
 
   tl2.fromTo(elem, {scale:0},{scale:1})
+
+});
+
+//project name grow
+gsap.utils.toArray(".project-name").forEach(elem => {
+
+  gsap.fromTo(elem, {scale:0, fontSize:0},{scale:1, fontSize:'1em',
+    scrollTrigger: {
+      trigger: elem,
+      start: "top bottom",
+      end: "+=200%",
+      scrub: true,
+      markers:true
+    }
+  });
 
 });
 
