@@ -81,7 +81,6 @@ header{
 }
 
 .bg-wrapper{
-  touch-action: none;
   margin: 0;
   display: flex;
   justify-content: flex-end;
