@@ -60,7 +60,7 @@ header{
   text-shadow: 0px 0px 10px DarkOrchid;
   /* mix-blend-mode: difference; */
   width: 100%;
-  position: fixed;
+  position: absolute;
   z-index: 9;
   text-align: center;
   top:1em;

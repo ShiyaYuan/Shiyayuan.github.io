@@ -71,19 +71,20 @@ const myFunc = () => {
       trigger:"#bg1-wrapper",
       scrub:true,
       start:"top top",
-      end:"+=300%",
+      end:"+=400%",
       markers:true
     }
   });
 
   timeline1_img
-  .fromTo(['#bg1-wrapper img','#name1'],{scale:0},{scale:1})
+  .from('#name1',{y:'100vh'},"same1")
+  .fromTo(['#bg1-wrapper img'],{scale:0},{scale:1},"same1")
   .to('#bg1-wrapper img', {scale:1})
-  // .fromTo('#name1',{scale:0},{scale:1})
 
-  .to('#bg1-wrapper',{scaleY:0, transformOrigin:'top'},"same")
+
+  .to('#bg1',{scaleY:0, transformOrigin:'top'},"same")
   .fromTo('#bg2',{scaleY:0, transformOrigin:'bottom'},{scaleY:1, transformOrigin:'bottom'},"same")
-  .to('#project1',{blur:10,duration:1},"same")
+  .to(['#project1','#name1'],{blur:10,duration:1},"same")
 
 
   // bg2 img
@@ -91,19 +92,20 @@ const myFunc = () => {
     scrollTrigger: {
       trigger:"#bg2-wrapper",
       scrub:true,
-      start:"+=150%",
-      end:"+=300%",
+      start:"+=200%",
+      end:"+=400%",
       markers:true
     }
   });
 
   timeline2_img
-  .fromTo(['#bg2-wrapper img','#name2'],{scale:0},{scale:1})
+  .from('#name2',{y:'100vh'},"same1")
+  .fromTo(['#bg2-wrapper img'],{scale:0},{scale:1},"same1")
   .to('#bg2-wrapper img', {scale:1})
 
-  .to('#bg2-wrapper',{scaleY:0, transformOrigin:'top'},"same")
+  .to('#bg2',{scaleY:0, transformOrigin:'top'},"same")
   .fromTo('#bg3',{scaleY:0, transformOrigin:'bottom'},{scaleY:1, transformOrigin:'bottom'},"same")
-  .to('#project2',{blur:10,duration:1},"same")
+  .to(['#project2','#name2'],{blur:10,duration:1},"same")
 
 
   // bg3 img
@@ -111,52 +113,55 @@ const myFunc = () => {
     scrollTrigger: {
       trigger:"#bg3-wrapper",
       scrub:true,
-      start:"+=300%",
-      end:"+=300%",
+      start:"+=400%",
+      end:"+=400%",
       markers:true
     }
   });
 
   timeline3_img
-  .fromTo('#bg3-wrapper .img',{scale:0},{scale:1})
+  .from('#name3',{y:'100vh'},"same1")
+  .fromTo('#bg3-wrapper .img',{scale:0},{scale:1},"same1")
   .to('#bg3-wrapper .img', {scale:1})
 
-  .to('#bg3-wrapper',{scaleY:0, transformOrigin:'top'},"same")
+  .to('#bg3',{scaleY:0, transformOrigin:'top'},"same")
   .fromTo('#bg4',{scaleY:0, transformOrigin:'bottom'},{scaleY:1, transformOrigin:'bottom'},"same")
-  .to('#project3',{blur:10,duration:1},"same")
+  .to(['#project3','#name3'],{blur:10,duration:1},"same")
 
   // bg4 img
   const timeline4_img = gsap.timeline({
     scrollTrigger: {
       trigger:"#bg4-wrapper",
       scrub:true,
-      start:"+=450%",
-      end:"+=300%",
+      start:"+=600%",
+      end:"+=400%",
       markers:true
     }
   });
 
   timeline4_img
-  .fromTo('#bg4-wrapper .img',{scale:0},{scale:1})
+  .from('#name4',{y:'100vh'},"same1")
+  .fromTo('#bg4-wrapper .img',{scale:0},{scale:1},"same1")
   .to('#bg4-wrapper .img', {scale:1})
 
-  .to('#bg4-wrapper',{scaleY:0, transformOrigin:'top'},"same")
+  .to('#bg4',{scaleY:0, transformOrigin:'top'},"same")
   .fromTo('#bg5',{scaleY:0, transformOrigin:'bottom'},{scaleY:1, transformOrigin:'bottom'},"same")
-  .to('#project4',{blur:10,duration:1},"same")
+  .to(['#project4','#name4'],{blur:10,duration:1},"same")
 
   // bg5 img
   const timeline5_img = gsap.timeline({
     scrollTrigger: {
       trigger:"#bg5-wrapper",
       scrub:true,
-      start:"+=600%",
-      end:"+=350%",
+      start:"+=800%",
+      end:"+=400%",
       markers:true
     }
   });
 
   timeline5_img
-  .fromTo('#bg5-wrapper .img',{scale:0},{scale:1})
+  .from('#name5',{y:'100vh'},"same1")
+  .fromTo('#bg5-wrapper .img',{scale:0},{scale:1},"same1")
   .to('#bg5-wrapper .img', {scale:1})
 
 
