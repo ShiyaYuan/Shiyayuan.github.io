@@ -160,7 +160,7 @@ bgs.forEach((section, i) => {
     .fromTo(bgs[i + 1],{scaleY: 0},{scaleY: 1, transformOrigin: 'bottom'}, "<")
     .to(names[i],{top:'1em'},"<")
     .fromTo(imgs[i],{scale: 0},{scale: 1}, "<")
-    .to(imgs,{scale: 1})
+    // .to(imgs,{scale: 1})
   }
 
 
