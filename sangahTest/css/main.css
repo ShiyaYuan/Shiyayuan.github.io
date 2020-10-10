@@ -55,15 +55,15 @@ html.has-scroll-dragging {
     cursor: grabbing;
   }
 
-  .scrollContainer{
-  width: 100vw;
-  height:100vh;
-  position: fixed;
+html{
+  /* letter-spacing: -0.02em; */
 }
-
 body{
+  /* border: 2px solid red; */
+  -webkit-font-smoothing: antialiased;
   font-family: arial;
-  /* height: 2000vh; */
+  font-size: 19px;
+  height:7600vh;
   margin: 0;
   padding: 0;
   background-color: black;
@@ -72,7 +72,18 @@ body{
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
-
+.upperContainer{
+  width: 100vw;
+  height:100vh;
+  position: fixed;
+  z-index: 99
+}
+.scrollContainer{
+  width: 100vw;
+  height:100vh;
+  position: fixed;
+  /* border: 2px solid red; */
+}
 /* Hide scrollbar for Chrome, Safari and Opera */
 ::-webkit-scrollbar {
   display: none;
@@ -95,6 +106,41 @@ body{
   display: none;
   visibility: hidden;
 }
+
+
+
+
+
+
+/* CUSTOM SCROLLBAR */
+.customScrollbar{
+  top:0;
+  right:0;
+  width: 2vw;
+  height: 100vh;
+  background-color: red;
+  position: fixed;
+  z-index: 99999;
+}
+.thumbnails{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border:2px solid black;
+
+}
+.scroller{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  opacity:0.5;
+
+}
+
 
 /* ADUIO CONTROL */
 .audio-control{
@@ -121,27 +167,23 @@ audio{
 /* HEADER */
 header{
   color: white;
-  /* mix-blend-mode: difference; */
   width: 100%;
-  z-index: 999;
+  z-index: 9999;
   position: fixed;
   display: flex;
   justify-content: space-between;
   /* border:2px solid red; */
 }
-
-#name{
+.name{
   padding: .8em;
   /* border:2px solid red; */
 }
-#name:hover{
+.name:hover{
   cursor: pointer;
   color: red;
 }
 
 #email{
-  text-decoration: none;
-  color: white;
   padding: .8em;
   /* border:2px solid red; */
 }
@@ -149,274 +191,253 @@ header{
   cursor: pointer;
   color: red;
 }
+a {
+  text-decoration: none;
+  color: white;
+}
 
 /* ABOUT */
 #about{
+  font-size: 1em;
   /* padding-top: 2.8em; */
   width: 100vw;
   height:100vh;
-  /* border: 2px solid red; */
+  /* border: 1px solid hotpink; */
   color: white;
   position: fixed;
   z-index: 999;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  /* background: linear-gradient(pink, gray, dimgray, gray, red, black); */
+}
+.title{
 
 }
 
+
 ul {
-  /* list-style-type: none; */
+  list-style-type: none;
   margin: 0;
   padding-left: 1em;
   margin-bottom: .8em;
+  /* border: 1px solid red; */
+}
+li{
+  /* border: 1px solid red; */
+  /* padding: .1em; */
+  margin: .2em;
+}
+
+ul li:before {
+  content: '\2014';
+  position: absolute;
+  /* margin-left: -20px; */
+  margin-left: -1.3em;
 }
 
 #aboutL{
   padding-top: 2.8em;
-  /* padding: .8em; */
-  flex:0 0 50%;
-  /* border: 2px solid red; */
+  flex:0 0 48%;
+  /* background-color: red; */
+  /* border: 1px solid red; */
 }
 #aboutR{
   overflow: scroll;
+  position: relative;
   padding-top: 2.8em;
-  /* padding: .8em; */
-  flex:0 0 50%;
-  /* border: 2px solid red; */
+  flex:0 0 48%;
+  /* background-color: black; */
+  /* border: 1px solid red; */
 }
 .aboutL-content{
   margin-bottom:.8em;
-  /* border: 2px solid red; */
+  /* border: 1px solid red; */
 }
 .aboutR-content{
   margin-bottom:.8em;
-  /* border: 2px solid red; */
+  /* border: 1px solid red; */
 }
 
 /* PROJECTS */
-.projects{
-  width:100%;
-  height:100%;
+.all-names{
+  width: 100vw;
   position: absolute;
   display: flex;
   justify-content: center;
-  align-items: center;
-  /* border:2px solid red; */
 }
-
-.projects .img{
-  width: 400px;
-  height:400px;
-  background-color: red;
-}
-
 .project-name{
   color: white;
   text-shadow: 0px 0px 10px DarkOrchid;
   /* mix-blend-mode: difference; */
-  width: 100%;
+  width: 100vw;
   position: absolute;
   z-index: 9;
   text-align: center;
   top:102vh;
+  /* top:1em; */
   /* border: 2px solid red; */
 }
 
 /* SCROLLING PAGES */
-#homepage{
-  z-index: 99;
-  position: absolute;
-  width: 100%;
-  height:100%;
-  /* border: 2px solid red; */
-}
-
-#homepage #bg{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height:100vh;
-  width: 100vw;
-  background: linear-gradient(pink, gray, dimgray, gray, red, black);
-}
-
 .bg-wrapper{
   margin: 0;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  z-index: 9;
-  position: fixed;
+  z-index: 1;
+  position: absolute;
   width: 100vw;
   height:100vh;
-  /* border: 1px solid lime; */
+  /* border: 2px solid lime; */
   /* padding: 1px; */
 }
-
-.bg-trigger{
-  position: absolute;
-  height: 1px;
-  width: 100vw;
-  /* background-color:blue; */
-}
-
-.all-triggers{
-    /* z-index: 9999; */
-  position: absolute;
-  width:100vw;
-  height:100vh;
-}
-
-.trigger{
-width:100vw;
-height:90vh;
-/* border: 1px solid lime; */
-}
-
-.trigger1{
-width:100vw;
-height:90vh;
-border: 1px solid lime;
-}
-
-.bg{
+.project-wrapper{
   width: 100vw;
   height:100vh;
-  /* position: fixed; */
-  /* border: 1px solid lime; */
+  position: fixed;
 }
-
-#bg1-wrapper{
-  /* position: fixed; */
-}
-
-#bg1 {
+.projects{
+  position:absolute;
   width: 100%;
   height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects img{
+  width: 400px;
+}
+#homepage {
+  z-index: 9;
+  background: linear-gradient(black,pink, gray, dimgray, gray, red, black);
+}
+#bg1 {
   background: linear-gradient(black,pink, gray, dimgray, gray, red, black);
 }
 
 #bg2 {
-  width: 100%;
-  height:100%;
   background: linear-gradient(black, pink, pink, black);
 }
 
 #bg3 {
-  width: 100%;
-  height:100%;
   background: linear-gradient(black, blue, black);
 }
 
 #bg4 {
-  width: 100%;
-  height:100%;
   background: linear-gradient(black, pink, pink, black);
 }
 
 #bg5 {
-  width: 100%;
-  height:100%;
   background: linear-gradient(black, yellow, black);
 }
 
 #bg6 {
-  width: 100%;
-  height:100%;
   background: linear-gradient(black, yellow, black);
 }
 #bg7 {
-  width: 100%;
-  height:100%;
   background: linear-gradient(black, yellow, black);
 }
 #bg8 {
-  width: 100%;
-  height:100%;
   background: linear-gradient(black, yellow, black);
 }
 #bg9 {
-  width: 100%;
-  height:100%;
   background: linear-gradient(black, yellow, black);
 }
 #bg10 {
-  width: 100%;
-  height:100%;
   background: linear-gradient(black, yellow, black);
 }
 #bg11 {
-  width: 100%;
-  height:100%;
   background: linear-gradient(black, yellow, black);
 }
 #bg12 {
-  width: 100%;
-  height:100%;
   background: linear-gradient(black, yellow, black);
 }
 #bg13 {
-  width: 100%;
-  height:100%;
   background: linear-gradient(black, yellow, black);
 }
 #bg14 {
-  width: 100%;
-  height:100%;
   background: linear-gradient(black, yellow, black);
 }
 #bg15 {
-  width: 100%;
-  height:100%;
   background: linear-gradient(black, yellow, black);
 }
 #bg16 {
-  width: 100%;
-  height:100%;
   background: linear-gradient(black, yellow, black);
 }
 #bg17 {
-  width: 100%;
-  height:100%;
   background: linear-gradient(black, yellow, black);
 }
 #bg18 {
-  width: 100%;
-  height:100%;
   background: linear-gradient(black, yellow, black);
 }
 #bg19 {
-  width: 100%;
-  height:100%;
   background: linear-gradient(black, yellow, black);
 }
 #bg20 {
-  width: 100%;
-  height:100%;
   background: linear-gradient(black, yellow, black);
 }
 #bg21 {
-  width: 100%;
-  height:100%;
   background: linear-gradient(black, pink, pink, black);
 }
 #bg22 {
-  width: 100%;
-  height:100%;
   background: linear-gradient(black, pink, pink, black);
 }
 #bg23 {
-  width: 100%;
-  height:100%;
   background: linear-gradient(black, pink, pink, black);
 }
 #bg24 {
-  width: 100%;
-  height:100%;
   background: linear-gradient(black, pink, pink, black);
 }
 #bg25 {
-  width: 100%;
-  height:100%;
   background: linear-gradient(black, pink, pink, black);
+}
+#bg26 {
+  background: linear-gradient(black, pink, pink, black);
+}
+#bg27 {
+  background: linear-gradient(black, pink, pink, black);
+}
+#bg28 {
+  background: linear-gradient(black, pink, pink, black);
+}
+#bg29 {
+  background: linear-gradient(black, pink, pink, black);
+}
+#bg30 {
+  background: linear-gradient(black, pink, pink, black);
+}
+#bg31 {
+  background: linear-gradient(black, pink, pink, black);
+}
+#bg32 {
+  background: linear-gradient(black, pink, pink, black);
+}
+#bg33 {
+  background: linear-gradient(black, pink, pink, black);
+}
+#bg34 {
+  background: linear-gradient(black, pink, pink, black);
+}
+#bg35 {
+  background: linear-gradient(black, pink, pink, black);
+}
+#bg36 {
+  background: linear-gradient(black, pink, pink, black);
+}
+#bg37 {
+  background: linear-gradient(black, pink, pink, black);
+}
+#bg38 {
+  background: linear-gradient(black, pink, pink, black);
+}
+
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+
+
 }
