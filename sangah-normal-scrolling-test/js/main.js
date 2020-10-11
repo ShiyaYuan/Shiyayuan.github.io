@@ -149,7 +149,7 @@ bgs.forEach((section, i) => {
 
   if(i !== bgs.length - 1) {
     timeline.to(section,{scaleY:0, transformOrigin:'top'})
-    // .fromTo(imgs[i],{scale: 0},{scale: 1}, "<")
+    .fromTo(imgs[i],{scale: 0},{scale: 1}, "<")
     //warnings
     .to(imgs[i-1],{blur:10,duration:1},"<")
     .to(names[i-1],{blur:10,duration:1,autoAlpha:0},"<")
@@ -159,7 +159,7 @@ bgs.forEach((section, i) => {
     timeline
     .fromTo(bgs[i + 1],{scaleY: 0},{scaleY: 1, transformOrigin: 'bottom'}, "<")
     .to(names[i],{top:'1em'},"<")
-    .fromTo(imgs[i],{scale: 0},{scale: 1}, "<")
+    // .fromTo(imgs[i],{scale: 0},{scale: 1}, "<")
     .to(imgs[i],{scale: 1})
     //or
     // .to(imgs,{scale: 1})
