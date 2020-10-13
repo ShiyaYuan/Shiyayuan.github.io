@@ -198,15 +198,15 @@ let progress = 0;
 ScrollTrigger.addEventListener("refreshInit", () => progress = timeline.scrollTrigger.progress );
 ScrollTrigger.addEventListener("refresh", () => timeline.scrollTrigger.scroll(progress * ScrollTrigger.maxScroll(window)));
 
-ScrollTrigger.addEventListener("refresh", () => ScrollTrigger.maxScroll(window));
-
 
 };
 
 
 
 
-
+window.onbeforeunload = function () {
+        window.scrollTo(0,0);
+};
 
 window.addEventListener("load", function(){
     init();
