@@ -205,7 +205,7 @@ ScrollTrigger.addEventListener("refresh", () => timeline.scrollTrigger.scroll(pr
 
 
 window.onbeforeunload = function () {
-        window.scrollTo(0,0);
+        ScrollTrigger.maxScroll(window)
 };
 
 window.addEventListener("load", function(){
