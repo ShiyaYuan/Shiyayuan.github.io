@@ -170,7 +170,7 @@ bgs.forEach((section, i) => {
 
   if(bgs[i + 1]){
     timeline
-    .fromTo(bgs[i + 1],{scaleY: 0},{duration:1, scaleY: 1, transformOrigin: 'bottom',ease: "sine.inOut"}, "<")
+    .from(bgs[i + 1],{duration:1, scaleY: 0, transformOrigin: 'bottom',ease: "sine.inOut"}, "<")
     .to(names[i],{duration:1, top:'1em',ease: "sine.inOut"},"<")
     .from(imgs[i],{scale: 0, duration:1},"<")
     .to(imgs[i],{scale:1,duration:1})
@@ -179,8 +179,8 @@ bgs.forEach((section, i) => {
   if(imgs[i + 1]){
     timeline
     .fromTo(imgs[i],{scale:1},{scale:0.8,duration:1})
-    .to(names[i],{top:'1.5em',duration:1,ease: "sine.inOut"},"<")
-    .to(imgs[i],{blur:10, duration:1,ease: "sine.inOut"},"<")
+    .to(names[i],{top:'1.5em',duration:1},"<")
+    .to(imgs[i],{blur:10, duration:1},"<")
     .to(names[i],{blur:10,duration:1, autoAlpha:0},"<")
   }
 
