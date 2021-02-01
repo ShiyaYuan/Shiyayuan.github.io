@@ -1,0 +1,482 @@
+body {
+	font-family: arial;
+	font-size: 3vw;
+	background-color: green;
+
+	cursor:url('https://shiyayuan.github.io/lan-bw/assets/images/butterfly2.png'), pointer;
+}
+
+body.page-love .bg-love {
+	display: flex;
+}
+
+body.page-flower .bg-flower {
+	display: flex;
+}
+
+.bg-love {
+	display: none;
+}
+
+.bg-flower {
+	display: none;
+}
+
+body.page-love .iframe-love {
+	display: flex;
+}
+
+body.page-flower .iframe-flower {
+	display: flex;
+}
+
+.iframe-flower {
+	display: none;
+}
+
+.iframe-love{
+	display: none;
+}
+
+
+.cursor {
+	cursor:url('https://shiyayuan.github.io/lan-bw/assets/images/butterfly2.png'), auto;
+}
+
+a {
+	color:white;
+	text-decoration: underline;
+
+}
+
+a:hover {
+	cursor:url('https://shiyayuan.github.io/lan-bw/assets/images/butterfly2.png'), pointer;
+}
+
+.grid a:hover {
+	color: white;
+	font-style: italic;
+	text-shadow: 0px 0px 10px white;
+	font-family: times;
+	text-decoration: none;
+	/*-webkit-text-stroke: 1px white;*/
+
+}
+
+.about a:hover {
+	text-shadow: 0px 0px 10px white;
+	font-family: times;
+	text-decoration: none;
+}
+
+.title {
+	font-family:arial;
+	text-decoration: underline;
+	text-align: center;
+	width: 100vw;
+	z-index: 3;
+	font-size: 2vw;
+	color: white;
+	position: absolute;
+	text-shadow: 0px 0px 100px black;
+	filter: blur(3px);
+	transition: 1.5s;
+	opacity: 0.5;
+}
+
+.title:hover {
+	filter: blur(0px);
+	transition: 1.5s;
+	opacity: 1;
+}
+
+.title a:hover {
+	color: white;
+	font-style: none;
+	/*text-shadow: 0px 0px 10px white;*/
+	font-family: arial;
+	text-decoration: none;
+	
+}
+
+
+.iframe-container {
+	cursor:url('https://shiyayuan.github.io/lan-bw/assets/images/butterfly2.png'), pointer;
+
+	z-index: 3;
+	width:50vw;
+	height:60vh;
+	border-radius: 50%;
+	overflow: hidden;
+	overflow: scroll;
+
+	position: absolute;
+	box-shadow: inset 10px 17px 40px white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	animation-name:morph;
+	animation-duration:7s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	
+	/*border:2px solid red;*/
+}
+
+
+.iframe-container:hover {
+	cursor:url('https://shiyayuan.github.io/lan-bw/assets/images/butterfly2.png'), pointer;
+	
+	transform: scaleX(-1);
+}
+
+.iframe-border {
+	position: absolute;
+	width:50vw;
+	height:60vh;
+	border-radius: 50%;
+	box-shadow: inset 10px 17px 40px white;
+	pointer-events: none;
+
+}
+
+iframe {
+	cursor:url('https://shiyayuan.github.io/lan-bw/assets/images/butterfly2.png'), pointer;
+	
+	padding-top: 0.5vh;
+	box-shadow: inset 10px 17px 40px white;
+	width:100vw;
+	height:100vh;
+
+}
+
+.heading {
+	font-family: arial narrow;
+	position: fixed;
+	font-size: 8vw;
+	text-align: center;
+}
+
+.grid {
+	width: 100vw;
+	height:100vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	perspective: 1000px;
+
+}
+
+.left {
+	/*border:2px solid red;*/
+	margin:1vw;
+	color: white;
+	flex:0 0 42%;
+	height: 90vh;
+	overflow: scroll;
+	/*background-color: darkgray;*/
+	/*border:1px solid white;*/
+	/* background-image: linear-gradient(to right, red, black, lime);*/
+
+
+	/*box-shadow: 0px 0px 30px lime;*/
+	/*transform: rotateY(20deg);*/
+}
+
+.left-content {
+
+	padding-top: 25vh;
+
+}
+
+.right {
+	/*border:2px solid red;*/
+
+	margin:1vw;
+	color: white;
+	flex:0 0 42%;
+	height: 90vh;
+	overflow: scroll;
+	/*background-color: red;*/
+	/*border:1px solid white;*/
+
+	/*background-color: blueviolet;*/
+	/*box-shadow: 0px 0px 30px blueviolet;*/
+	/*transform: rotateY(-20deg);*/
+
+}
+
+.right-content {
+
+	padding-top: 25vh;
+}
+
+
+/* about */
+.about-icon {
+
+	z-index: 8;
+	font-size:8vw;
+	color: white;
+	font-family: arial narrow;
+	position: fixed;
+	right:0px;
+	bottom:0px;
+	padding: 2vw;
+	cursor:pointer;
+
+}
+
+.about-icon:hover {
+	
+	font-style: italic;
+	text-shadow: 0px 0px 10px white;
+	font-family: times;
+	text-decoration: none;
+	cursor:url('https://shiyayuan.github.io/lan-bw/assets/images/butterfly2.png'), pointer;
+}
+
+.about {
+	/*visibility: hidden;*/
+	z-index: 3;
+	width:100vw;
+	height:100vh;
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-text:hover {
+	transform: scaleX(-1);
+}
+
+.about-text {
+
+
+	font-size: 3.5vw;
+	line-height: 1.2em;
+	letter-spacing: -0.01em;
+	flex:0 0 50%;
+	overflow: scroll;
+	color: white;
+	width:50vw;
+	height:60vh;
+	border-radius: 50%;
+	background-color: green;
+	padding-top: 17vh;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	
+	text-align: center;
+	box-shadow: inset 25px 10px 30px white;
+}
+
+.about-caption {
+	/*text-decoration: underline;*/
+	
+	font-family: arial narrow;
+	
+}
+
+.about-text span {
+	font-style: italic;
+	text-shadow: 0px 0px 8px white;
+	text-decoration: underline;
+}
+
+
+
+
+
+/* cube */
+
+.container {
+	width:100vw;
+	height:100vh;
+	perspective: 1500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+.container iframe {
+	width: 30vw;
+	height:35vh;
+}
+
+.cube {
+	position: relative;
+   	transform-style: preserve-3d;
+   	transform: rotateX(-24deg) rotateY(-40deg) rotateZ(0deg);
+
+   	animation-name: spin;
+   	animation-duration: 9s;
+   	animation-iteration-count: infinite;
+   	animation-timing-function: linear;
+   	animation-direction: normal;
+}
+
+@keyframes spin{
+	from {
+		transform: rotateX(-24deg) rotateY(-40deg) rotateZ(0deg);
+	}
+	to {
+		transform: rotateX(336deg) rotateY(320deg) rotateZ(0deg);; 
+	}
+}
+
+.cube:hover {
+	-webkit-animation-play-state:paused;
+  	-moz-animation-play-state:paused;
+  	-o-animation-play-state:paused;
+  	animation-play-state:paused;
+}
+
+.faces {
+	position: absolute; 
+	top: 0; 
+	left: 0;
+	width:30vw;
+  	height:40vh;
+
+}
+
+.front { 
+
+  transform: rotateY(0deg) translateZ(150px); }
+
+
+.back { 
+  transform: rotateY(180deg) translateZ(150px);	}
+
+.bottom { 
+
+  transform: rotateX(-90deg) translateZ(150px);	}
+
+.left-f {
+	transform: rotateY(-90deg) translateZ(150px);
+}
+
+.right-f {
+	transform: rotateY(90deg) translateZ(150px);	
+}
+
+.top { 
+  transform: rotateX(90deg) translateZ(150px); }
+
+.front-content {
+
+  	text-align: center;
+	position: relative;
+	width:30vw;
+  	height:40vh;
+  	transform-style: preserve-3d;
+
+  }
+
+  .top-content {
+  	position: relative;
+  	width:30vw;
+  	height:40vh;
+  	transform-style: preserve-3d;
+  	color: white;
+  	font-size:2vw;
+  }
+
+  .enter {
+  	padding: 20px;
+  	color: white;
+  	font-size:2vw;
+  }
+
+
+
+.bg {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	z-index: -1;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.float {
+	position: absolute;
+	width: 8vw;
+}
+
+.float img {
+	width: 100%;
+}
+
+
+.bg-left {
+	flex:0 0 50%;
+	height: 100vh;
+	/*filter: blur(15px);*/
+	/*background-image: linear-gradient(to right, skyblue,red, white, red, lime,white, lime,purple);*/
+	/*background-color: black;*/
+
+}
+
+.bg-right {
+	flex:0 0 50%;
+	height: 100vh;
+	/*filter: blur(15px);*/
+	/*background-image: linear-gradient(to right, skyblue,red,lime, purple);*/
+	/*background-color: gray;*/
+}
+
+.bg img {
+	width: 100%;
+	
+}
+
+
+
+
+
+
+
+/* interactive */
+
+.fade {
+	transform: scale(6);
+	opacity: 0;
+}
+
+.hide {
+	visibility: hidden;
+}
+
+.a-show {
+	visibility: show;
+}
+
+.iframe-love {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
