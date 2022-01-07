@@ -1,0 +1,143 @@
+body {
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 20px;
+}
+
+a {
+	color:red;
+}
+
+#alphabet-menu-wrapper{
+	/* border: 1px solid red; */
+	display: flex;
+	justify-content: space-around;
+	align-items:center;
+	height: 5vh;
+}
+.alphabet-menu-item{
+	/* border: 1px solid red; */
+	/* margin: 0.1em; */
+	cursor: pointer;
+}
+
+#wrapper{
+	width: 100vw;
+	height:100vh;
+	/* border: 1px solid red; */
+	/* background-color: red; */
+}
+.container{
+	width: 100vw;
+	height:100vh;
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+#container1{
+	/* justify-content: center; */
+	align-content: flex-start;
+	/* align-content: center; */
+	/* flex-direction: column; */
+	/* align-content: stretch; */
+	/* background-color: yellow; */
+}
+#container2{
+	/* background-color: blue; */
+	/* justify-content: center; */
+	align-content: flex-start;
+	/* align-content: center; */
+	flex-direction: row;
+}
+/* #container1 .grid {
+  border: 1px solid blue;
+} */
+/* #container1 .grid.selected {
+  background-color: black;
+} */
+
+/* #container2 .grid {
+  border: 1px solid red;
+} */
+/* #container2 .grid.selected {
+  background-color: black;
+} */
+.grid{
+	font-size: 10px;
+	color: white;
+	/* flex-grow: 1; */
+	/* width: 25px; */
+	/* height:25px; */
+}
+.border{
+	border: 1px solid black;
+}
+
+.selected{
+	background-color:black;
+	/* -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000; */
+}
+
+#fill-btn-wrapper{
+	/* border: 1px solid red; */
+	bottom: 0;
+	display: flex;
+	z-index: 99;
+	padding: 1em;
+	align-items: center;
+	/* padding-left: 1em;
+	padding-top: 1em;
+	padding-bottom: 0.4em; */
+	position: fixed;
+}
+#line-fill-btn{
+	border-left: 1px solid black;
+	background-color: white;
+}
+#black-fill-btn{
+	background-color:black;
+}
+#mix-fill-btn{
+	border-left: 1px solid black;
+	background-color: white;
+}
+#shadow-fill-btn{
+	-moz-box-shadow:    inset 0 0 10px #000000, 1px 1px 8px 1px grey;
+  -webkit-box-shadow: inset 0 0 10px #000000, 1px 1px 8px 1px grey;
+  box-shadow:         inset 0 0 10px #000000, 1px 1px 8px 1px grey;
+	background-color: white;
+}
+#half-bg{
+	width: 60%;
+	height: 100%;
+	float: right;
+	background-color:black;
+}
+.change-fill-btn{
+	box-shadow: 1px 1px 8px 1px grey;
+	/* border: 1px solid red; */
+	cursor: pointer;
+	width: 25px;
+	height:25px;
+	margin-right: 1em;
+}
+#remove-btn{
+	/* border: 1px solid red; */
+	cursor: pointer;
+	bottom: 0;
+	right: 0;
+	z-index: 99;
+	position: fixed;
+	padding: 1em;
+}
+#grid-btn{
+	/* border: 1px solid red; */
+	cursor: pointer;
+	z-index: 99;
+}
+
+.hide{
+	visibility:hidden;
+}
